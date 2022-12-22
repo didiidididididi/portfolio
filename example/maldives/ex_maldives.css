@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+/* 전체설정 */
+*{margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+/* 레이아웃설정 */
+header {background-color: aqua;
+        width: 15%;
+        height: 100%;
+        position: fixed;}
+
+nav {width: 85%;
+    height: 70px;
+    background-color: aquamarine;
+    margin-left: 15%;}
+
+section {background-color: cornflowerblue;
+        width: 85%;
+        height: auto;
+        margin-left: 15%;}
+
+article {height: 260px; float: left; width: 20%;}
+
+article:nth-child(1) {background-color: steelblue; width: 60%; height: 520px;}
+article:nth-child(2) {background-color: yellow; width: 40%;}
+article:nth-child(3) {background-color: cornflowerblue;}
+article:nth-child(4) {background-color: darkslategrey;}
+article:nth-child(5) {background-color: deepskyblue;}
+article:nth-child(6) {background-color: lightblue; width: 40%;}
+article:nth-child(7) {background-color: turquoise;}
+article:nth-child(8) {background-color: teal;}
+article:nth-child(9) {background-color: skyblue; width: 40%;}
+article:nth-child(10) {background-color: royalblue;}
+article:nth-child(11) {background-color: powderblue;}
+article:nth-child(12) {background-color: palegreen;}
+
+
+/* 미디어쿼리구간설정 */
+
+/* 1280px이상 1599px이하구간 */
+@media (min-width:1280px) and (max-width:1599px){
+
+header {background-color: aqua;
+        width: 100%;
+        height: 100px;
+        position: relative;}
+
+nav {width: 100%;
+    height: 70px;
+    background-color: aquamarine;
+    margin-left: 0;}
+
+section {background-color: cornflowerblue;
+        width: 100%;
+        height: auto;
+        margin-left: 0;}
+
+
+}
+
+
+/* 1024px 이상 1279px 이하구간 */
+@media (min-width:1024px) and (max-width:1279px){
+header {background-color: aqua;
+    width: 100%;
+    height: 100px;
+    position: relative;}
+
+nav {width: 100%;
+height: 70px;
+background-color: aquamarine;
+margin-left: 0;}
+
+section {background-color: cornflowerblue;
+    width: 100%;
+    height: auto;
+    margin-left: 0;}
+
+article {height: 260px; float: left; width: 25%;}
+
+article:nth-child(1) {background-color: steelblue; width: 75%; height: 520px;}
+article:nth-child(2) {background-color: yellow; width: 25%;}
+article:nth-child(3) {background-color: cornflowerblue;}
+article:nth-child(4) {background-color: darkslategrey;}
+article:nth-child(5) {background-color: deepskyblue;}
+article:nth-child(6) {background-color: lightblue; width: 50%;}
+article:nth-child(7) {background-color: turquoise; width: 50%;}
+article:nth-child(8) {background-color: teal;}
+article:nth-child(9) {background-color: skyblue; width: 25%;}
+article:nth-child(10) {background-color: royalblue; width: 50%;}
+article:nth-child(11) {background-color: powderblue;}
+article:nth-child(12) {background-color: palegreen;}
+    
+}
+
+
+/* 780px 이상 1023px 이하구간 */
+@media (min-width:780px) and (max-width:1023px){
+header {background-color: aqua;
+    width: 100%;
+    height: 100px;
+    position: relative;}
+
+nav {width: 100%;
+height: 50px;
+background-color: aquamarine;
+margin-left: 0;}
+
+section {background-color: cornflowerblue;
+    width: 100%;
+    height: auto;
+    margin-left: 0;}
+
+article {height: 260px; float: left; width: 33.3333%;}
+
+article:nth-child(1) {background-color: steelblue; width: 100%; height: 400px;}
+article:nth-child(2) {background-color: yellow; width: 66.6666%;}
+article:nth-child(3) {background-color: cornflowerblue; display: none;}
+article:nth-child(4) {background-color: darkslategrey;}
+article:nth-child(5) {background-color: deepskyblue;}
+article:nth-child(6) {background-color: lightblue; width: 66.6666%;}
+article:nth-child(7) {background-color: turquoise; width: 33.3333%;}
+article:nth-child(8) {background-color: teal;}
+article:nth-child(9) {background-color: skyblue; width: 33.3333%;}
+article:nth-child(10) {background-color: royalblue; display: none;}
+article:nth-child(11) {background-color: powderblue; display: none;}
+article:nth-child(12) {background-color: palegreen; display: none;}
+
+}
