@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+</head>
+<body>
+    <header>
+        <ul id="gnb">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+            <li><a href="#">메뉴5</a></li>
+            <li><a href="#">메뉴6</a></li>
+            <li><a href="#">메뉴7</a></li>
+            <li><a href="#">메뉴8</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </div>
+
+
+
+    <style>
+
+        /* 전체설정 */
+        *{margin: 0; padding: 0;}
+        ul {list-style: none;}
+        a {text-decoration: none; color: #000;}
+        img{border: none;
+            vertical-align: bottom;}
+        body {background-color: coral;}
+
+
+        header {position: fixed;
+            display: flex;
+            align-items: center;
+            background-color: cornflowerblue;
+            width: 100%; height: 100px;
+            left: 0; top: 0;}
+
+        header #gnb {display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;}
+
+        header li {font-size: 20px;
+            cursor: pointer;
+            height: 100%;
+            width: 12.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+       
+        header li:hover {background-color: chartreuse;}
+
+        /* 섹션설정 */
+        section {width: 100%; height: 100vh;}
+
+        section:nth-child(1) {background-color: darkgoldenrod;}
+        section:nth-child(2) {background-color: bisque;}
+        section:nth-child(3) {background-color: gold;}
+        section:nth-child(4) {background-color: lavenderblush;}
+        section:nth-child(5) {background-color: brown;}
+        section:nth-child(6) {background-color: cadetblue;}
+        section:nth-child(7) {background-color: blanchedalmond;}
+        section:nth-child(8) {background-color: oldlace;}
+
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            // 브라우저 높이값찾기
+            let ht = $(window).height()
+            console.log(ht)
+            // gnb의 높이를 찾아라
+            let gnbht = $('#gnb').height();
+            console.log(gnbht)
+            // gnb의 가로값을 찾아라
+            let gnbwd = $('#gnb').width();
+            console.log(gnbwd)
+
+            $('section').height(ht)
+
+            // 브라우저 리사이즈 될때마다 section 높이값에 대입
+            $(window).resize(function(){
+
+                let ht = $(window).height()
+                $('section').height(ht)
+            })
+
+            $('section').mousemove(function(e){
+
+                let posx = e.pageX
+                let posy = e.pageY
+            })
+
+            // 스크롤바 위치값 찾아내기
+            $(window).scroll(function(){
+
+                let sc = $(this).scrollTop()
+                
+
+            })
+
+            // li를 클릭했을때, scrollTop을 해당 높이로 가게 만들어라.
+            $('#gnb li').click(function(){
+
+            // 클릭했을때 나의 순번찾기
+            let i = $(this).index();
+            let ht = $(window).height()
+
+            // 클릭했을때 나에게 클래스 on값을 붙여라.
+            $('#gnb li').removeClass('on')
+            $(this).addClass('on')
+
+
+            $('html').stop().animate({'scrollTop':ht*i},1400,'swing')
+            })
+
+
+            $('section').mousewheel(function(event,delta){
+
+            if (delta>0){
+                let prev = $(this).prev().offset().top
+                $('html').stop().animate({'scrollTop':prev},1400,'swing')
+            } else if (delta<0){
+                let next = $(this).next().offset().top
+                $('html').stop().animate({'scrollTop':next},1400,'swing')
+            }
+
+
+            })
+
+        })
+    </script>
+</body>
+</html>

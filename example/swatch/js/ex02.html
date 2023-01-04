@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스움직임이펙트</title>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem, ipsum <span class="style1">dolor</span> sit amet <span class="style2">consectetur</span class> adipisicing <span class="style3">elit.</span><br>
+            Ducimus <span class="style4">ipsa</span> qui fugit harum? <span class="style5">Officia</span></p>
+    </div>
+
+    <div class="count">
+        <p>X 좌표 : <em>00</em></p>
+        <p>Y 좌표 : <em>00</em></p>
+    </div>
+
+    <div class="cursor"></div>
+
+    <style>
+        * {margin: 0; padding: 0;}
+
+        body {position: fixed;
+            width: 100%;
+            height: 100%;
+        background-color: blueviolet;
+        background-image: url(../img/bg2.jpg);
+        background-position:top center;
+        background-repeat: no-repeat;
+        
+      perspective: 800;}
+   
+
+        .box {
+            position: fixed;
+            z-index: 500;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;}
+  
+        .box p {
+          font-size: 28px;
+          color: #fff;
+          line-height: 2;
+         
+        }
+        .count {
+          position: fixed;
+          font-size: 30px;
+          font-weight: bold;
+          right: 150px;
+          top: 50px;
+          color: #fff;
+          /* z-index: 3; */
+        }
+    
+  
+        .box span {
+          border-bottom: dashed 3px #fff;
+       
+          padding-bottom: 2px;
+          background-color: #333;
+        }
+  
+        .cursor {
+          position: absolute;
+  
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.1);
+          background-image:url(../img/bg4.jpg) ;
+          background-position: top center;
+          background-attachment: fixed;
+          background-size: cover;
+          background-repeat: no-repeat;
+          /* border: 3px solid red; */
+          left: 0;
+          top: 0;
+          transition: background-color 0.5s, 
+          border-color 0.5s,
+          border-radius 0.5s,
+          transform 0.2s;
+          
+         
+        }
+  
+        .cursor.style1 {
+          background-color: rgba(255, 165, 0, 0.4);
+          border-color: orange;
+        }
+        
+        .cursor.style2 {
+          border-radius: 0;
+          transform: rotateY(360deg);
+        }
+
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+        $(window).mousemove(function(e){
+
+
+$('.cursor').css({'left':e.clientX-100,top:e.clientY-100})
+
+
+
+});
+
+
+        $('.style2').mouseenter(function(){
+
+$('.cursor').addClass('style2')
+        })
+
+        $('.style2').mouseleave(function(){
+
+$('.cursor').removeClass('style2')
+        })
+    })
+    </script>
+
+</body>
+</html>

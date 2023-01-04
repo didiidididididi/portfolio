@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+    <div class="box1">
+        <p>마우스 이펙트 - 따라다니기</p>
+    </div>
+
+    <div class="box2">
+        <p>To climb <span>steep</span> hills requires <span>slow</span> pace at <span>first.</span></p>
+        <p><span>험준한</span> 산을 <span>오르기</span> 위해선 먼저 <span>천천히</span> 걸어야 한다.</p>
+    </div>
+
+    <div class="box3">
+        <ul>
+            <li>clientX : 0 px</li>
+            <li>clientY : 0 px</li>
+            <li>offsetX : 0 px</li>
+            <li>offsetY : 0 px</li>
+            <li>pageX : 0 px</li>
+            <li>pageY : 0 px</li>
+            <li>screenX : 0 px</li>
+            <li>screenY : 0 px</li>
+        </ul>
+    </div>
+
+    <div class="cursor"></div>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        
+        body {background-color: darkgreen;}
+
+        .box1 {position: fixed;
+            left: 10px;
+            top: 10px;}
+        .box1 p {font-size: 24px;}
+
+        .box2 {display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%; height: 100vh;}
+        .box2 p {line-height: 1.5;}
+        .box2 p:nth-child(1) {font-size: 24px;}
+        .box2 p:nth-child(2) {font-size: 30px; font-weight: bold;}
+        .box2 span {border-bottom: 2px dotted #fff;}
+
+
+        .box3 {position: fixed;
+            left: 10px;
+            bottom: 10px;}
+
+        .cursor {position: absolute;
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            background-color: coral;
+            left: 0; top: 0;
+            pointer-events: none;}
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(window).mousemove(function(e){
+
+                let x = e.pageX
+                let y = e.pageY
+
+                $('.cursor').css({'left':x-50 ,'top':y-50})
+
+            })
+        })
+    </script>
+
+    
+</body>
+</html>
