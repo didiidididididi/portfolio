@@ -1,0 +1,91 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #fff;}
+img {border: none;
+    vertical-align: bottom;}
+
+/* 헤더설정 */
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    z-index: 50;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+h1 {background-image: url(aquarium/logo_white.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    left: 110px;
+    top: 10px;
+    position: fixed;
+    cursor: pointer;}
+.gnb {display: flex;
+    position: fixed;
+    left: 300px;
+    top: 50px;
+    width: 85%;
+    justify-content: space-around;}
+.gnb li {
+        margin-right: 105px;
+        transition: all 0.5s;}
+.gnb li:hover {transform: scale(1.2);}
+
+.gnb li a {font-size: 16px;}
+
+/* 메인슬라이드 설정 */
+.video {background-color: #666;
+    width: 100%; height: 100vh;
+    position: relative;}
+video {width: 100%;}
+.main .txt {position: absolute;
+    top: 40%; left: 40%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;}
+.txt p:nth-child(1) {text-align: center; font-size: 30px;
+    margin-bottom: 20px;}
+.txt p:nth-child(2) {font-size: 18px; margin-bottom: 20px;}
+.txt p:nth-child(3) {font-size: 26px;}
+.txt p:nth-child(4) {font-size: 48px; font-weight: bold;}
+
+/* 동물소개 설정 */
+.animal {background-color: #555;
+    width: 100%; height: 100vh;
+    background-image: url(aquarium/animal_bg.jpg);
+    background-size: cover;}
+
+/* 체험소개 설정 */
+.pro {background-color: #444;
+    width: 100%; height: 100vh;
+    background-image: url(aquarium/aqua_bg.jpg);
+    background-size: cover;}
+
+/* 이용요금 및 운영시간 설정 */
+.time {background-color: #333;
+    width: 100%; height: 100vh;
+    background-image: url(aquarium/time_bg.jpg);
+    background-size: cover;}
+
+/* 가이드맵 설정 */
+.guide {background-color: #222;
+    width: 100%; height: 100vh;
+    background-image: url(aquarium/guide_bg001.png);
+    background-size: cover;}
+
+/* 고객의소리 설정 */
+.answer {background-color: #aaa;
+    width: 100%; height: 100vh;
+    background-image: url(aquarium/guest_bg.jpg);
+    background-size: cover;}
+
+/* 오시는길 설정 */
+.map {background-color: #bbb;
+    width: 100%; height: 100vh;}
