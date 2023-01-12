@@ -81,7 +81,7 @@ article strong {position: absolute;
 article:hover strong {opacity: 1;}
 article strong img {}
 
-article p {background-color: red;
+article p {
     width: 100%;
     height: 0;
     position: absolute;
@@ -89,15 +89,18 @@ article p {background-color: red;
     margin-top: 0;
     z-index: 1;
     opacity: 0;
-    transition: all 0.8s;}
-article p img {}
+    transition: all 0.8s;
+    text-align: center;}
+
+article p img {width: auto;
+    height: 100%;}
 
 article em {position: absolute;
     
     bottom: 50px;
     right: -300px; /* 변환할 예정 */
     display: inline-block;
-    transition: all 1s;
+    transition: all 0.5s;
     z-index: 3;}
 article span {position: absolute;
     right: -300px;
@@ -123,5 +126,5 @@ article.on h2 a {font-size: 30px;}
 article.on p {height: 500px;
     margin-top: -250px;
     opacity: 1;}
-article.on em {right: 20px;}
+article.on em {right: 20px; opacity: 0.8;}
 article.on span {right: 20px;}

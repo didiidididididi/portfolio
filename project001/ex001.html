@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대전 아쿠아리움</title>
     <link rel="stylesheet" href="ex.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery.mousewheel.js"></script>
 </head>
 <body>
     <header>
@@ -21,9 +23,11 @@
     </header>
     <section class="video">
         <div class="main">
-            <video loop autoplay muted>
-                <source src="aquarium/아쿠아리움 메인슬라이드.mp4" type="video/mp4">
-            </video>
+            <div class="video1">
+                <video loop autoplay muted>
+                    <source src="aquarium/aquarium_mainslide.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="txt">
                 <p>Feel<br>Fresh<br>Friend</p>
                 <p>만지는 즐거움, 느끼는 생생함!</p>
@@ -32,13 +36,67 @@
             </div>
         </div>
     </section>
-    <section class="animal"></section>
-    <section class="pro"></section>
-    <section class="time"></section>
-    <section class="guide"></section>
-    <section class="answer"></section>
-    <section class="map"></section>
-    <section></section>
+
+    <section class="animal">
+        <h2>동물소개</h2>
+        <ul id="animal">
+            <li><img src="aquarium/animal_01.png" alt="" width="400px" height="400px"></li>
+            <li><img src="aquarium/animal_001.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_002.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_003.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_004.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_005.jpg" alt="" width="200px" height="400px"></li>
+        </ul>
+        <p class="more">더보기</p>
+        <!-- <div>
+            <p class="left"></p>
+            <p class="right"></p>
+        </div> -->
+    </section>
+
+    <section class="pro">
+        <h2>체험소개</h2>
+        <ul id="aqua">
+            <li><img src="aquarium/aqua_001.jpg" alt=""></li>
+            <li><img src="aquarium/aqua_002.jpg" alt=""></li>
+            <li><img src="aquarium/aqua_003.jpg" alt=""></li>
+        </ul>
+        <p class="more">더보기</p>
+    </section>
+
+    <section class="time">
+        <h2>이용요금 및 운영시간</h2>
+        <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <section class="guide">
+        <h2>가이드맵</h2>
+        <div></div>
+    </section>
+
+    <section class="answer">
+        <h2>고객의소리</h2>
+        <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>오시는길</h2>
+        <div class="map">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.0968332345205!2d127.41887931504563!3d36.30995858005245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654ed7244b3f81%3A0x96beb8f73ba98323!2z64yA7KCE7JWE7L-g7JWE66as7JuA!5e0!3m2!1sko!2skr!4v1673490617845!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <div class="sideMenu"></div>
     
 </body>
 </html>

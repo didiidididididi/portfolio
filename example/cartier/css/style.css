@@ -1,0 +1,68 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+/* wrap설정 */
+#wrap {position: fixed;
+    width: 100%; height: 100%;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;}
+.logoBox {position: fixed;
+    left: 0;
+    top: 50%;
+    margin-top: -200px;
+    width: 300px; height: 240px;
+    text-align: center;}
+
+section {position: fixed;
+    width: 100%; height: 100%;
+    right: 0;
+    top: 0;}
+article {float: right;
+    width: 12%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/divider.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    overflow: hidden;}
+article h2 {position: absolute;
+    top: 300px; left: 20px;
+    border-left: 3px solid #555;
+    padding-left: 15px;
+    color: #666;
+    z-index: 3;
+    transition: all 0.8s;}
+article div {position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: all 1s;}
+
+article video {position: absolute;
+    height: 100%; width: auto;
+    z-index: 1;
+    opacity: 0;}
+article h3 {position: absolute;
+    bottom: 210px; right: -300px;
+    z-index: 4;}
+article p {position: absolute;
+    width: 300px;
+    right: -300px; bottom: 50px;
+    height: 150px;
+    z-index: 5;
+    text-align: right;}
+
+article:hover h2 {color: #fff;}
+article:hover div {height: 80px; top: 270px;}
