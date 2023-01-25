@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 아쿠아리움</title>
+    <link rel="stylesheet" href="ex01.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+    <script src="https://use.fontawesome.com/19be655260.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 ></h1>
+        </div>
+        <ul class="gnb">
+            <li><a href="#">대전 아쿠아리움</a></li>
+            <li><a href="#">동물소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">체험소개</a></li>
+            <li><a href="#">고객의소리</a></li>
+            <li><a href="#">Log in</a></li>
+        </ul>
+    </header>
+    <section class="video">
+        <div class="video1">
+            <video preload="auto" loop="loop" muted id="vid">
+                <source src="aquarium/aquarium_mainslide.mp4" type="video/mp4">
+            </video>
+            </div>
+        <div class="txt">
+            <p>Feel<br>Fresh<br>Friend</p>
+            <p>만지는 즐거움, 느끼는 생생함!</p>
+            <p>우리가족 즐거운 놀이터</p>
+            <p>대전 아쿠아리움</p>
+        </div>
+    </section>
+
+    <section class="animal">
+        <h2>동물소개</h2>
+        <ul id="animal">
+            <li><img src="aquarium/animal_01.png" alt="" width="400px" height="400px"></li>
+            <li><img src="aquarium/animal_001.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_002.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_003.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_004.jpg" alt="" width="200px" height="400px"></li>
+            <li><img src="aquarium/animal_005.jpg" alt="" width="200px" height="400px"></li>
+        </ul>
+        <p class="more"><a href="#">더보기</a></p>
+        <!-- <div>
+            <p class="left"></p>
+            <p class="right"></p>
+        </div> -->
+    </section>
+
+    <section class="pro">
+        <h2>체험소개</h2>
+        <ul id="aqua">
+            <li><img src="aquarium/aqua_001.jpg" alt=""></li>
+            <li><img src="aquarium/aqua_002.jpg" alt=""></li>
+            <li><img src="aquarium/aqua_003.jpg" alt=""></li>
+        </ul>
+        <p class="more"><a href="#">더보기</a></p>
+    </section>
+
+    <section class="time">
+        <h2>이용요금 및 운영시간</h2>
+        <div class="box">
+            <div class="box1">
+                <img src="aquarium/time_001.png" alt="">
+                <h3>이용요금</h3>
+                <div class="money">
+                    <ul>
+                        <li>성인</li>
+                        <li>청소년</li>
+                        <li>어린이/경로</li>
+                        <li>장애인</li>
+                    </ul>
+                    <ul>
+                        <li>23000원</li>
+                        <li>21000원</li>
+                        <li>19000원</li>
+                        <li>19000원</li>
+                    </ul>
+                </div>
+                <p class="more"><a href="#">자세히보기</a></p>
+            </div>
+            <div class="box2">
+                <img src="aquarium/time_002.png" alt="">
+                <h3>운영시간<span>(연중무휴)</span></h3>
+                <div id="time">
+                    <ul>
+                        <li>평일</li>
+                        <li>10:00~18:00</li>
+                        <li>입장마감 (17:00)</li>
+                    </ul>
+                    <ul>
+                        <li>주말 및 공휴일</li>
+                        <li>10:00~19:00</li>
+                        <li>입장마감 (18:00)</li>
+                    </ul>
+                </div>
+                <p class="more"><a href="#">자세히보기</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide">
+        <h2>가이드맵</h2>
+        <div>
+            <img src="aquarium/guide_bg002.png" alt="">
+            <img src="aquarium/guide001.png" alt="">
+        </div>
+    </section>
+
+    <section class="answer">
+        <h2>고객의소리</h2>
+        <div class="box">
+            <div class="box1">
+                <img src="aquarium/guest_002.png" alt="">
+                <h3>자주하는 질문</h3>
+                <div class="border"></div>
+                <div class="question">
+                    <p>Q. 할인되는 카드가 있나요?</p>
+                    <p>A. 현재 따로 할인되는 카드는 없으며,
+                        소셜커머스<br> 이용시 할인된 가격으로
+                        이용 가능합니다.
+                    </p>
+                </div>
+                <i class="fa fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                <p class="more"><a href="#">자세히보기</a></p>
+            </div>
+            <div class="box2">
+                <img src="aquarium/time_002.png" alt="">
+                <h3>고객 소리함</h3>
+                <p class="more"><a href="#">자세히보기</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>오시는길</h2>
+        <div id="map">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.0968332345205!2d127.41887931504563!3d36.30995858005245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654ed7244b3f81%3A0x96beb8f73ba98323!2z64yA7KCE7JWE7L-g7JWE66as7JuA!5e0!3m2!1sko!2skr!4v1673490617845!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="add">
+                <ul>
+                    <li>업체명</li>
+                    <li>업체주소</li>
+                </ul>
+                <ul>
+                    <li id="add2">대전 아쿠아리움</li>
+                    <li>대전광역시 중구 보문산공원로 469(대사동)</li>
+                    <li>(구)대전광역시 중구 대사동 198-14 대전아쿠아리움</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>대전광역시 중구 대사동 198-14 대전아쿠아리움</p>
+        <p>대표전화 : 042-1234-5678</p>
+        <p>단체문의 : 010-1234-5678</p>
+        <p>카피라이트</p>
+        <span class="top">TOP</span>
+    </footer>
+
+    <div class="sideMenu">
+        <span class="ring"></span>
+        <div class="txt">
+            <span class="blog"><a href="https://blog.naver.com/djaquarium" target="_blank">blog</a></span>
+            <a href="https://www.facebook.com/djaquarium2015" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.google.co.kr/maps/place/%EB%8C%80%EC%A0%84%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80/data=!4m10!1m2!2m1!1z64yA7KCEIOyVhOy_oOyVhOumrOybgA!3m6!1s0x35654ed7244b3f81:0x96beb8f73ba98323!8m2!3d36.3099586!4d127.421068!15sChbrjIDsoIQg7JWE7L-g7JWE66as7JuAkgEIYXF1YXJpdW3gAQA!16s%2Fg%2F1v42cng2" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            <span class="ticket"><a href="https://map.naver.com/v5/entry/place/37110041?placePath=%2Fbooking&entry=plt&c=15,0,0,0,dh" target="_blank">티켓구매</a></span>
+        </div>
+        
+    </div>
+
+
+
+    <div class="popUp">
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+        <p><img src="" alt=""></p>
+
+        <span>X</span>
+    </div>
+
+
+
+
+    
+</body>
+</html>
