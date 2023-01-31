@@ -52,21 +52,30 @@ header>div {width: 20%;}
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: all 0.5s;}
+    display: none;
+    transition: all 0.5s;
+    z-index: -1;}
+
+.sub_menu.on {opacity: 1;
+        z-index: 999;}
 .sub_menu .sub1 {width: 20%; height: 100%;
     text-align: center; font-size: 30px;
     background-color: #9598ff;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
 .sub_menu .sub2 {display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
     width: 80%;
     height: 100%;
-    text-align: center;}
+    text-align: center;
+    position: absolute;
+    left: 20%;}
 .sub_menu .sub2 ul {width: 13.3333%;
     margin-left: 30px;}
 .sub_menu .sub2 li {margin: 30px 0;
@@ -80,7 +89,8 @@ header>div {width: 20%;}
     height: 1000px;
     object-fit: cover;
     overflow: hidden;
-    position: relative;}
+    position: relative;
+    z-index: 2;}
 video {width: 100%; height: 100%;}
 
 .txt {position: absolute;
@@ -544,7 +554,7 @@ footer .top:hover {background-color: rgba(0, 0, 0, 0.7);}
         object-fit: cover;
         overflow: hidden;
         position: relative;}
-    video {width: 100%; height: 100%;}
+    video {width: auto; height: 100vh;}
 
 /* 동물소개 설정 */
 #animal img {width: 100%; height: 100%;}
@@ -602,7 +612,7 @@ footer .top:hover {background-color: rgba(0, 0, 0, 0.7);}
     cursor: pointer;
     transition: all 0.5s;}
 #map .add {margin-left: -250px;
-        left: 50%; bottom: 130px;}
+        left: 50%; bottom: 110px;}
 #map iframe {height: 400px;}
 
 }
@@ -614,7 +624,7 @@ footer .top:hover {background-color: rgba(0, 0, 0, 0.7);}
 
     #animal img {width: 100%; height: 100%;}
     .animal .more {bottom: 150px;}
-    .animal h2 {left: 130px;}
+    .animal h2 {left: 160px;}
     .popUp>p {width: 400px;
             height: 400px;
             margin-left: -200px;
@@ -633,11 +643,117 @@ footer .top:hover {background-color: rgba(0, 0, 0, 0.7);}
         left: 160px;
         top: 140px;
         font-size: 30px;}
+    .guide div {top: 0;}
+    .guide img {position: absolute;}
+    .guide img:nth-child(1) {width: 700px; height: auto;}
+    .guide img:nth-child(2) {width: 600px; height: auto;}
+    .guide h2 {
+        left: 160px;
+        top: 135px;
+        font-size: 30px;}
 
+
+    .answer h2 {top: 160px;}
+.answer .box1 img {width: 400px; height: 400px;}
+.answer .box2 img {width: 400px; height: 400px;}
+.answer .box1 .border {width: 350px; height: 200px;
+    top: 100px;}
+.answer .box1 .more {left: 150px;}
+.answer .box1 i {position: absolute; color: #000;
+    left: 200px;
+    top: 260px;}
+
+.answer .question {position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.answer .question p {margin-top: 10px;}
+.question p:nth-child(1) {font-size: 20px;}
+.question p:nth-child(2) {font-size: 14px;}
+.answer .box2 h3 {position: absolute;
+    left: 120px;
+    top: 160px;
+    font-size: 30px;
+    width: 100%; height: 100%;}
+.answer .box2 p {position: absolute;
+    left: 150px;
+    bottom: 50px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;}
+.popUp2>p {width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;}
+.popUp2 span {top: 150px;}
+
+#map .add {margin-left: -250px;
+    left: 50%; bottom: 20px;}
+        
 
 }
 
 /* 780px 이상 1023px 이하구간 */
 @media (min-width:780px) and (max-width:1023px){
-    
+    .video {width: 100%; height: 100%;}
+    video {width: auto; height: 100vh;
+        object-fit: cover;}
+
+    .gnb li:nth-child(6) {display: none;}
+
+    #animal li {display: none;}
+    #animal li:nth-child(1) {display: block;
+        position: absolute;
+        top: 250px;
+        left: 130px;}
+    .animal .more {bottom: 130px;
+            right: 120px;}
+
+
+    .sub_menu {display: none;}
+    .popUp>p {width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;}
+    .popUp span {right: 100px;}
+
+    #aqua li {display: none;}
+    #aqua li img {width: 400px; height: 400px;}
+    #aqua li:nth-child(1) {display: block;
+        position: absolute;
+        top: 240px;
+        left: 200px;}
+
+    .pro .more {bottom: 130px;
+        right: 90px;}
+
+    .time .box2 img {width: 400px; height: 400px;}
+    .time .box1 img {width: 400px; height: 400px;}
+    .time .box1 p {left: 150px;}
+    .time .box2 p {left: 150px;}
+    .time h2 {left: 160px;
+        top: 140px;
+        font-size: 30px;}
+    .time h2 {position: absolute;
+            left: 245px;
+            top: 155px;
+            font-size: 30px;}
+
+    .guide div {top: 0;}
+    .guide img {position: absolute;}
+    .guide img:nth-child(1) {width: 700px; height: auto;}
+    .guide img:nth-child(2) {width: 600px; height: auto;}
+    .guide h2 {
+        left: 160px;
+        top: 135px;
+        font-size: 30px;}
+
+
+        
 }

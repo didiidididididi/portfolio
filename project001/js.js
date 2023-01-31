@@ -96,11 +96,11 @@ $(document).ready(function(){
     // 메뉴를 호버했을때 sub_menu가 보여라
     $('.gnb li').mouseenter(function(){
         let i = $(this).index();
-        $('.sub_menu').css({'opacity':'1'})
+        $('.sub_menu').stop().fadeIn()
     })
 
     $('header').mouseleave(function(){
-        $('.sub_menu').css({'opacity':0})
+        $('.sub_menu').stop().fadeOut()
     })
 
 
