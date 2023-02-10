@@ -4,33 +4,420 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>올리브영 온라인몰</title>
-    <!-- 폰트어썸 연결 -->
+    <title>올리브영 - 온라인쇼핑몰</title>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리 CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 외부스크립트연결 -->
+    <script src="js/js.js"></script>
+    <!-- 폰트어썸연결 -->
     <script src="https://use.fontawesome.com/19be655260.js"></script>
-    <!-- 외부스타일시트 연결 -->
-    <link rel="stylesheet" href="style.css">
-    <!-- 외부스크립트 -->
-    <script src="js.js"></script>
 </head>
 <body>
     <header>
-        <div class="utill">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        
-        <div class="header">
-            <h1></h1>
-        </div>
-
+        <h1 class="logo"></h1>
+        <ul class="menu">
+            <li>올리브영</li>
+            <li>신상</li>
+            <li>BEST</li>
+            <li>세일</li>
+            <li>오늘의 특가</li>
+            <li>맴버십/쿠폰</li>
+        </ul>
+        <ul class="utill">
+            <li>회원가입</li>
+            <li>로그인</li>
+            <li>장바구니</li>
+            <li>주문배송</li>
+            <li>고객센터</li>
+            <li>매장안내</li>
+            <li>Global</li>
+        </ul>
     </header>
+
+    <div id="wrap">
+        <section class="mainImg">
+            <article>
+                <div>
+                    <ul class="mainImg_img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="mainImg_txt">
+                    <div>
+                        <span>에스트라</span><br>
+                        <span><strong>한번도<br>자극받지 않은<br>피부처럼<br></strong></span>
+                        <span>흔적진정세럼 최대 41%할인</span>
+                    </div>
+                    <div>
+                        <span>릴리바이레드</span><br>
+                        <span><strong>미리 준비하는<br>사랑스러운<br>봄 메이크업<br></strong></span>
+                        <span>큐피트클럽 최대 36%할인</span>
+                    </div>
+                    <div>
+                        <span>올영 P!CK</span>
+                        <span><strong>올리브영이<br>P!CK한<br>이 달의 브랜드<br></strong></span>
+                        <span>각종 대표 브랜드</span>
+                    </div>
+                    <div>
+                        <span>올영 P!CK</span>
+                        <span><strong>올리셔스마켓<br>신상 보러가자!<br></strong></span>
+                        <span>신상 보러가자!</span>
+                    </div>
+                    <div>
+                        <span>올영 P!CK</span>
+                        <span><strong>까칠함을<br>잠재우는<br>피부 솔루션<br></strong></span>
+                        <span>진정케어 최대 50%할인</span>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="right">
+                    <ul>
+                        <li><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="info" data-scroll>
+            <article class="info_box1">
+                <div class="info_box01">
+                    <h2>OLIVEYOUNG STORY</h2>
+                    <strong>건강한 아름다움을 제안하는 글로벌 라이프스타일 플랫폼</strong><br>
+                    <span>올리브영은 국내에 최적화된 헬스&뷰티 스토어 개념을 최초로 선보이며<br>
+                        1999년 1호점을 오픈한 이래, 늘 최초, 최고의 길을 걸어왔습니다.</span>
+                </div>
+            </article>
+            <article class="info_box2">
+                <div class="info_box21">
+                    <h2>VISION</h2>
+                    <span>건강한 아름다움을<br>큐레이팅 하는 곳</span>
+                </div>
+                <div class="info_box22">
+                    <h2>MISSION</h2>
+                    <span>새로운 헬스ㆍ뷰티ㆍ라이프스’타일 상품과<br>
+                        쇼핑 경험을 큐레이션함으로써,<br>
+                        고객 스스로 일상을 건강하고<br>
+                        아름답게 가꿀 수 있도록<br>
+                        영감과 에너지를 준다.</span>
+                </div>
+                <div class="info_box23">
+                    <h2>SLOGAN</h2>
+                    <span>ALL LIVE BETTER</span><br>
+                    <span>올리브영과 함께 모든 사람이 건강하고<br>
+                        싱그럽게 살아가는 것을 지원하는<br>
+                        올리브영의 철학을 담고 있습니다.</span>
+                </div>
+            </article>
+            <article class="info_box3">
+                <h2 id="logo"></h2>
+                <div class="info_box30">
+                    <div class="info_box31">
+                        <h2>OLIVE</h2>
+                        <span>NATURAL, HEALTHY 상징</span>
+                    </div>
+                    <div class="info_box32">
+                        <h2>YOUNG</h2>
+                        <span>ENJOY, ENERGY, FUN 상징</span>
+                    </div>
+                    <div class="info_box33">
+                        <h2>SYMBOL</h2>
+                        <span>건강과 싱그러움의 상징인<br>올리브 열매를 형상화</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="ranking" data-scroll>
+            <article class="ranking_box1">
+                <div class="ranking_box11">
+                    <ul class="ranking_box111">
+                        <li></li>
+                        <li>OLIVEYOUNG<br>BEST ITEM</li>
+                    </ul>
+                </div>
+                <div class="ranking_box12">
+                    <ul class="ranking_box112">
+                        <li></li>
+                        <li>스킨케어</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="ranking_box2">
+                <div class="ranking_box21">
+                    <ul>
+                        <li></li>
+                        <li>미용소품</li>
+                    </ul>
+                </div>
+
+                <div class="ranking_box221">
+                    <div class="ranking_box222">
+                        <div class="ranking_box22">
+                            <ul>
+                                <li></li>
+                                <li>마스크팩/패드</li>
+                            </ul>
+                        </div>
+                        <div class="ranking_box23">
+                            <ul>
+                                <li></li>
+                                <li>여성 향수</li>
+                            </ul>
+                        </div>
+                    </div>
     
+                    <div class="ranking_box224">
+                        <div class="ranking_box24">
+                            <ul>
+                                <li></li>
+                                <li>바디케어</li>
+                            </ul>
+                        </div>
+                        <div class="ranking_box25">
+                            <ul>
+                                <li></li>
+                                <li>남성 향수</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="new" data-scroll>
+            <article class="new_box1">
+                <div class="new_box11">
+                    <h2>NEW ARRIVALS</h2>
+                    <div></div>
+                </div>
+            </article>
+            <article class="new_box2">
+                <div class="new_box21">
+                    <ul class="new_box211">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="new_box212">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="new_box213">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="new_box214">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="hotdeal" data-scroll>
+            <h2>HOT SALE !</h2>
+            <article class="hotdeal_box1">
+                <div>
+                    <ul class="hotdeal_box11">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="hotdeal_box2">
+                <div>
+                    <ul class="hotdeal_box21">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="health" data-scroll>
+            <article class="health_box1">
+                <div class="health_box11">
+                    <h2>NEW ARRIVALS</h2>
+                    <div></div>
+                </div>
+            </article>
+            <article class="health_box2">
+                <div class="health_box21">
+                    <ul class="health_box211">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="health_box212">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="health_box213">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                    <ul class="health_box214">
+                        <li></li>
+                        <li>피카소 생기창조 108<br>블러셔 브러쉬</li>
+                        <li>32000원</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="membership" data-scroll>
+            <h2>NEW MEMBERSHIP SIGNUP & FIRST PURCHASE BENEFITS</h2>
+            <article class="membership_box1">
+                <div class="membership_box11">
+                    <ul class="membership_box12">
+                        <li><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i></li>
+                        <li>혜택 더보기</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="membership_box2">
+                <div class="membership_box21">
+                    <div class="membership_box211">
+                        <p><img src="img/ico_benifit01.svg" alt=""></p>
+                        <ul>
+                            <li>올리브영 맴버십 신규 가입 쿠폰</li>
+                            <li>발급일로부터 1개월</li>
+                        </ul>
+                    </div>
+                    <div class="membership_box212">
+                        <p><img src="img/ico_benifit02.svg" alt=""></p>
+                        <ul>
+                            <li>온라인몰 첫구매딜 100원~</li>
+                            <li>첫구매 1회 한정</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="membership_box22">
+                    <h3>맴버십 회원이 되시면 올리브영에서 제공하는 다향한 혜택을 받으실 수 있습니다.</h3>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <section>
+            <article class="footer_box1">
+                <div class="footer_box11">
+                    <div>
+                        <h2>고객센터<br>이용안내</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>온라인몰 고객센터</li>
+                            <li>1522-0882</li>
+                            <li>매장 고객센터</li>
+                            <li>1577-4887</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box12">
+                    <ul>
+                        <li>고객센터 운영시간 [평일 09:00 - 18:00]</li>
+                        <li>주말 및 공휴일은 1:1문의하기를 이용해주세요.<br>
+                            업무가 시작되면 바로 처리해드립니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footer_box2">
+                <div>
+                    <ul>
+                        <li>채용안내</li>
+                        <li>가맹점 개설문의</li>
+                        <li>상품입점 및 제휴문의</li>
+                        <li>사이버 감사실</li>
+                        <li>고객센터</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footer_box3">
+                <h2 class="footer_logo"></h2>
+                <div>
+                    <ul>
+                        <li>씨제이올리브영 주식회사</li>
+                        <li>대표이사 : 이선정ㅣ사업자등록번호:809-81-01574</li>
+                        <li>주소 : (04323)서울특별시 용산구 한강대로 372,24층<br>(동자동,KDB타워)</li>
+                        <li>호스팅사업자:CJ 올리브네트웍스</li>
+                        <li>통신판매업신고번호:2019-서울용산-1428</li>
+                        <li>이메일:oliveweb@cj.net</li>
+                        <li>사업자 정보확인 ></li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>이용양관법적고지</li>
+                        <li>개인정보처리방침</li>
+                        <li>청소년보호방침</li>
+                        <li>영상정보처리기기 운영/관리 방침</li>
+                        <li>이메일무단수집거부</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>하나은행 구매안전 서비스<br>
+                            올리브영은 현금 결제한 금액에 대해<br>
+                            하나은행과 채무지급보증 계약을<br>
+                            체결하여 안전한 거래를 보장하고 있습니다</li>
+                        <li>서비스 가입사실 확인</li>
+                    </ul>
+                </div>
+            </article>
+            <hr>
+            <article class="footer_box4">
+                <p>Copyright ⓒ MINSU. All Rights Reserved.</p>
+                <div class="footer_box41">
+                    <ul>
+                        <li>OLIVE YOUNG SNS</li>
+                    </ul>
+                    <ul class="footer_ico">
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-commenting" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </footer>
+    
+    <style>
+        [data-scroll] {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 1.5s;}
+        [data-scroll="in"] {
+            opacity: 1;
+            transform: scale(1);}
+        [data-scroll="out"] {
+        opacity: 0;}
+
+    </style>
+
+    <script>
+        ScrollOut();
+    </script>
+
+
+
 </body>
 </html>
