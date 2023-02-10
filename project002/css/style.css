@@ -27,7 +27,7 @@ font-family를 주석으로 가둬서 임시저장 */
 .hotdeal {width: 100%; height: 800px;}
 .health {width: 100%; height: 800px;}
 .membership {width: 100%; height: 500px;}
-footer {width: 100%; height: 500px;}
+footer {width: 100%; height: 550px;}
 
 
 
@@ -104,7 +104,12 @@ header .utill {display: flex;
 .mainImg_txt {position: absolute;
     left: 20%; top: 25%;
     width: auto;}
+.mainImg_txt strong {font-size: 40px;
+    display: block;
+    margin: 10px 0;}
 
+
+/* 메인슬라이드 텍스트 , 이미지 on값 설정 */
 .mainImg_txt>div {display: none;}
 .mainImg_txt>div:nth-child(1) {display: block;}
 .mainImg_txt>div.on {display: block;}
@@ -113,9 +118,7 @@ header .utill {display: flex;
 .mainImg_img li:nth-child(1) {display: block;}
 .mainImg_img li.on {display: block;}
 
-.mainImg_txt strong {font-size: 40px;
-    display: block;
-    margin: 10px 0;}
+
 
 /* 메인슬라이드 화살표 설정 */
 .right ul{width: 100%; height: 100%;
@@ -544,6 +547,9 @@ section:nth-child(7) {width: 100%; height: 500px;
 .membership_box21 li:nth-child(1) {font-weight: bold;}
 .membership_box21 li:nth-child(2) {font-size: 14px;}
 
+/* footer 설정 */
+footer {background-color: #999;}
+
 /* footer_box1 설정 */
 .footer_box1 {display: flex;
     width: 100%; height: 200px;
@@ -592,7 +598,8 @@ section:nth-child(7) {width: 100%; height: 500px;
 .footer_box41 ul {margin: 0 40px;}
 .footer_ico {display: flex;
     font-size: 24px;}
-.footer_ico li {margin: 0 20px;}
+.footer_ico li {margin: 0 20px;
+    cursor: pointer;}
 
 
 
