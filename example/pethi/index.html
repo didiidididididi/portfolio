@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Hi - 반려용품쇼핑몰</title>
+    <!-- 외부스타일시트 -->
+    <script src="https://use.fontawesome.com/29f84cf8f7.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 외부스크립트연결 -->
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">PetHi</a></h1>
+        <nav> 
+            <ul class="gnb">
+            <li><a href="sub01.html">쇼핑</a></li>
+            <li><a href="#">핫딜</a></li>
+            <li><a href="#">추천</a></li>
+            <li><a href="#">랭킹</a></li>
+        </ul>
+    <ul class="util">
+        <li><a href="#">고객상담</a></li>
+        <li><a href="#">내계정</a></li>
+        <li><a href="#" class="shop"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>0</span></a></li>
+    </ul></nav>
+    </header>
+   <div id="wrap">
+        <section class="mainImg">
+            <article class="box01">
+                <div class="circle">
+                    <img src="img/dog_04.jpg" alt="">
+                </div>
+            </article>
+            <article class="box02"> 
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur</p>
+                </div>
+                <div>
+                    <img src="img/cat_04.jpg" alt="">
+                </div>
+                <div><img src="img/small_03.jpg" alt=""></div>
+                <div>
+                    <p>ipsum dolor sit amet consectetur</p>
+                </div>
+
+            </article>
+        </section>
+        <section class="hotdeal" data-scroll>
+            <img src="img/small_08.jpg" alt="" class="center pro">
+            <img src="img/small_05.jpg" alt="" class="bottom">
+            <article class="box01 rellax" data-rellax-speed="7"
+            data-rellax-xs-speed="-5"
+            data-rellax-mobile-speed="3"
+            data-rellax-tablet-speed="-8"
+            data-rellax-desktop-speed="1">
+                <div class="boxImg">
+                   <p> <img src="img/dog_06.jpg" alt=""></>
+                    <span>아이콘세트</span>
+                </div>
+                <div>perferendis vitae nisi</div>
+            </article>
+            <article class="box02">
+                <img src="img/cat_16.jpg" alt="">
+               
+            </article>
+           
+        </section>
+        <section class="info" data-scroll>
+            <img src="img/cat_16.jpg" alt="" class="bottom">
+            <article class="box01"><img src="img/dog_09.jpg" alt=""></article>
+            <article class="box02">
+                <img src="img/cat_27.jpg" alt="">
+               
+            </article>
+         
+        </section>
+        <section class="product" data-scroll>
+            <article class="center"></article>
+            <article class="list">
+                <ul>
+                    <li class="pro"><img src="img/small_07.jpg" alt=""></li>
+                    <li class="pro"><img src="img/cat_20.jpg" alt=""></li>
+                    <li class="pro"><img src="img/cat_03.jpg" alt=""></li>
+                    <li><img src="img/dog_08.jpg" alt=""></li>
+                    <li><img src="img/dog_02.jpg" alt=""></li>
+                </ul>
+            </article>
+        </section>
+        <section class="new" data-scroll>
+            <article class="box01"><img src="img/small_09.jpg" alt=""></article>
+            <article class="box02"><img src="img/cat_13.jpg" alt=""></article>
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+        <section class="lanking" data-scroll>
+            <img src="img/cat_16.jpg" alt="" class="bottom">
+            <article class="box01"><img src="img/dog_09.jpg" alt=""></article>
+            <article class="box02">
+                <img src="img/cat_27.jpg" alt="">
+               
+            </article>
+         
+        </section>
+    
+        <!-- 업체를 광고하는 소개페이지 -->
+        <section class="banner" data-scroll>
+            <article></article>
+            <article></article>
+        </section>
+        <section class="notice" data-scroll>
+            <article></article>
+            <article class="list">
+                <ul>
+                    <li><img src="img/small_07.jpg" alt=""></li>
+                    <li><img src="img/cat_20.jpg" alt=""></li>
+                    <li><img src="img/cat_03.jpg" alt=""></li>
+                    <li><img src="img/dog_08.jpg" alt=""></li>
+                    <li><img src="img/dog_02.jpg" alt=""></li>
+                </ul>
+            </article>
+        </section>
+        <!-- <section class="review">
+            <article></article>
+            <article></article>
+        </section> -->
+   </div>
+    <footer></footer>
+
+    <style>
+
+[data-scroll] {
+    opacity: 0;
+    
+    transform: scale(0.5);
+    transition: all 1.5s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1)
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: scale(0.5);
+}
+    </style>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script> 
+    var rellax = new Rellax('.rellax');
+     ScrollOut();
+
+ 
+    </script>
+
+    
+</body>
+</html>

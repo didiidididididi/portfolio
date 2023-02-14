@@ -1,0 +1,542 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* 전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+body {
+}
+
+
+
+/* 로고 */
+h1 {font-family: 'Righteous', cursive;}
+
+
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+/* 구글폰트, 눈누폰트 등에서 import미리설정
+font-family 를 주석으로 가둬서 임시저장 */
+
+/* 우선순위  CSS는 덮어쓰기가 가능 파일 
+제일상위자 - 태그네임 
+두번째상위자 - #wrap section -> section의 클래스네임으로 변경안됨
+세번째상위자 - ID 값  */
+
+/* 크기설정 */
+/* 제이쿼리에서 높이를 화면기준으로 변경될 section - 800px 
+내용에 따라 높이가 자동변환될 section 은 - 1000px /500px*/
+/* section:nth-child(1) {
+  width: 100%;
+  height: 800px;
+ 
+} */
+/* section:nth-child(2) {
+ 
+  height: 1000px;
+} */
+/* section:nth-child(3) {
+  width: 100%;
+  height: 1000px;
+} */
+section:nth-child(4) {
+  width: 100%;
+  height: 800px;
+}
+section:nth-child(5) {
+  width: 100%;
+  height: 800px;
+}
+/* section:nth-child(6) {
+  width: 100%;
+  height: 1000px;
+} */
+section:nth-child(7) {
+  width: 100%;
+  height: 500px;
+}
+section:nth-child(8) {
+  width: 100%;
+  height: 500px;
+}
+section:nth-child(9) {
+  width: 100%;
+  height: 500px;
+}
+
+/* 공간설정 - 내용 모두 삽입 삭제예정 */
+section:nth-child(1) {
+  background-color: #333;
+}
+section:nth-child(2) {
+  background-color: #444;
+}
+section:nth-child(3) {
+  background-color: #555;
+}
+section:nth-child(4) {
+  background-color: #666;
+}
+section:nth-child(5) {
+  background-color: #777;
+}
+section:nth-child(6) {
+  background-color: #888;
+}
+section:nth-child(7) {
+  background-color: #999;
+}
+section:nth-child(8) {
+  background-color: #aaa;
+}
+section:nth-child(9) {
+  background-color: #bbb;
+}
+
+/* header설정 */
+
+header {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: orange;
+  display: flex;
+}
+header.on{
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header h1 {width: 20%;
+  display: flex;
+justify-content: center;
+align-items: center;}
+header nav {width: 80%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-weight: bold;}
+header .gnb {width: 50%}
+header .util {width: 20%;}
+
+header ul {display: flex;
+        justify-content: space-around;}
+
+header a {display: block;}
+.gnb a {font-size: 20px;}
+.gnb a:hover {color: #fff;}
+.util a{font-size:14px ;
+color: #fff;}
+.util a:hover {opacity: 0.8;}
+
+.shop {position: relative;}
+.shop span {position: absolute;
+width: 12px;
+height: 12px;
+background-color: red;
+border-radius: 50%;
+font-size: 10px;right: -10px;
+text-align: center;
+line-height: 1.1;
+}
+
+/* mainImg 설정 */
+
+.mainImg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.mainImg .box01 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImg .circle {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImg .box01 img {
+  height: 100%;
+  width: auto;
+}
+.mainImg .box02 {
+  width: 60%;
+  height: 100%;
+}
+
+.mainImg .box02:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.mainImg .box02 > div {
+  float: left;
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImg .box02 > div img {
+  width: 100%;
+  height: auto;
+}
+
+/*hotdeal */
+.hotdeal {
+  width: 1000px;
+
+  height: auto;
+  position: relative;
+  flex-wrap: wrap;
+
+  display: flex;
+  margin: 80px auto;
+}
+.hotdeal article {
+  width: 50%;
+  padding: 50px 0;
+}
+.hotdeal .box01 {
+  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: column;
+}
+.hotdeal .box02 {
+  background-color: yellow;
+  height: 600px;
+  overflow: hidden;
+}
+/* .hotdeal .box01 {
+}
+
+.hotdeal .box02 {
+} */
+
+.hotdeal .box02 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-50px);
+}
+
+.hotdeal .boxImg {
+  width: 300px;
+  height: 500px;
+  margin-top: 50px;
+
+  position: relative;
+}
+
+.hotdeal .boxImg p {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotdeal .boxImg img {
+  height: 100%;
+  width: auto;
+}
+
+.hotdeal .boxImg span {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  right: -150px;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotdeal .center {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 50%;
+  margin-left: -200px;
+  top: 30%;
+  z-index: 100;
+}
+.hotdeal .bottom {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  bottom: -100px;
+  right: -300px;
+  z-index: 50;
+}
+
+/* info 설정 */
+
+.info {
+  width: 800px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 800px;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.info .box01 {
+  width: 400px;
+  position: absolute;
+  height: 600px;
+  top: -50px;
+  left: -200px;
+}
+.info .box01 img {
+  width: auto;
+  height: 800px;
+}
+.info .box02 {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+.info .box02 img {
+  width: auto;
+  height: 100%;
+}
+
+.info .bottom {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  bottom: 50px;
+  right: -50px;
+}
+
+/* product설정 */
+
+.product {
+  overflow: hidden;
+  position: relative;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .center {
+  width: 400px;
+  height: 800px;
+  background-color: blue;
+  position: absolute;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  top: 50%;
+  left: 50%;
+  margin-top: -450px;
+  margin-left: -200px;
+  z-index: 50;
+}
+
+.product .list {
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product .list ul {
+  display: flex;
+  width: 2000px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -300px;
+}
+.product .list li {
+  width: 380px;
+  height: 600px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.product .list li img {
+  height: 100%;
+  width: auto;
+}
+
+/* new 설정 */
+
+.new { position: relative;}
+.new article  {position: absolute;
+  width: 50%;
+  height: 100%;}
+.new .box01 {left: 0; 
+  top: 0;
+  background-color: rebeccapurple;
+}
+.new .box02 {right: 0;
+bottom: 0;
+background-color:burlywood}
+.new article img {width: 40%;
+                height: auto;}
+
+                .new .box01  img {position: absolute;
+                            left: 150px;
+                          top: 50px;}
+
+                          .new .box02  img {position: absolute;
+                            right: 150px;
+                        bottom: 50px;}          
+
+/* lanking 설정 */
+
+.lanking {
+  width: 800px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 800px;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.lanking .box01 {
+  width: 400px;
+  position: absolute;
+  height: 600px;
+  top: -50px;
+  left: -200px;
+}
+.lanking .box01 img {
+  width: auto;
+  height: 800px;
+}
+.lanking .box02 {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+.lanking .box02 img {
+  width: auto;
+  height: 100%;
+}
+
+.lanking .bottom {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  bottom: 50px;
+  right: -50px;
+}
+
+
+
+/* banner 설정 */
+
+.banner {display: flex}
+.banner article:nth-child(1) {width: 80%;
+height: 100%;
+background-image:url(../img/dog_06.jpg);
+background-position:center center;
+background-attachment: fixed; }
+.banner article:nth-child(2) {width: 20%;
+  height: 100%;
+background-color: lightpink}
+
+
+
+/* notice 설정 */
+
+.notice .list {
+  width: 1200px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.notice .list ul {
+  display: flex;
+  width: 2000px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+
+  top: 50px;
+}
+.notice .list li {
+  width: 380px;
+  height: 400px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.notice .list li img {
+  height: 100%;
+  width: auto;
+}
+
+
+
+/* 미디어쿼리구간~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* 1440px 이상일때 */
+/* @media (min-width: 1440px) {
+  #wrap {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */;

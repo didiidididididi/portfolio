@@ -38,7 +38,7 @@ header {width: 100%; height: 100px;
     position: fixed;
     background-color: #fffeda;
     z-index: 90;}
-header .logo {background-image: url(/img/h1_logo.png);
+header .logo {background-image: url(../img/h1_logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,6 +63,17 @@ header .utill {display: flex;
     font-size: 14px;
     cursor: pointer;}
 
+.shop {position: relative;}
+.shop span {position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.1;
+    right: -20px;}
+
 #wrap {padding-top: 100px;}
 
 /* mainImg 설정 */
@@ -70,31 +81,31 @@ header .utill {display: flex;
     position: relative;
     cursor: pointer;
     }
-.mainImg_img li:nth-child(1) {background-image: url(/img/slide1.jpg);
+.mainImg_img li:nth-child(1) {background-image: url(../img/slide1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%; height: 100%;
     position: absolute;}
-.mainImg_img li:nth-child(2) {background-image: url(/img/slide2.jpg);
+.mainImg_img li:nth-child(2) {background-image: url(../img/slide2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%; height: 100%;
     position: absolute;}
-.mainImg_img li:nth-child(3) {background-image: url(/img/slide3.jpg);
+.mainImg_img li:nth-child(3) {background-image: url(../img/slide3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%; height: 100%;
     position: absolute;}
-.mainImg_img li:nth-child(4) {background-image: url(/img/slide4.jpg);
+.mainImg_img li:nth-child(4) {background-image: url(../img/slide4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%; height: 100%;
     position: absolute;}
-.mainImg_img li:nth-child(5) {background-image: url(/img/slide5.jpg);
+.mainImg_img li:nth-child(5) {background-image: url(../img/slide5.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -111,11 +122,11 @@ header .utill {display: flex;
 
 /* 메인슬라이드 텍스트 , 이미지 on값 설정 */
 .mainImg_txt>div {display: none;}
-.mainImg_txt>div:nth-child(1) {display: block;}
+
 .mainImg_txt>div.on {display: block;}
 
 .mainImg_img li {display: none;}
-.mainImg_img li:nth-child(1) {display: block;}
+
 .mainImg_img li.on {display: block;}
 
 
@@ -179,7 +190,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     width: 100%; height: 333.3333px;
     justify-content: center;
     align-items: center;}
-.info_box3 #logo {background-image: url(/img/h1_logo.png);
+.info_box3 #logo {background-image: url(../img/h1_logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -209,11 +220,12 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     }
 .ranking li {cursor: pointer;
     transition: all 0.5s;}
-
+.ranking li:nth-child(1):hover {transform: scale(1.2);}
+.ranking ul {overflow: hidden;}
 
 .ranking_box111 {position: relative;
     margin-top: 50px;}
-.ranking_box111 li:nth-child(1) {background-image: url(/img/best_001.png);
+.ranking_box111 li:nth-child(1) {background-image: url(../img/best_001.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -230,14 +242,13 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     background-color: #8FC576;
     opacity: 0.8;}
 
-.ranking li:nth-child(1):hover {transform: scale(1.2);}
-.ranking ul {overflow: hidden;}
+
 
 .ranking_box112 {position: relative;
     margin-top: 50px;
     margin-left: 15px;
     margin-right: 50px;}
-.ranking_box112 li:nth-child(1) {background-image: url(/img/cream2.jpg);
+.ranking_box112 li:nth-child(1) {background-image: url(../img/cream2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -259,7 +270,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 
 .ranking_box21 ul {width: 250px; height: 410px;
     margin-right: 10px;}
-.ranking_box21 li:nth-child(1) {background-image: url(/img/best_006.jpg);
+.ranking_box21 li:nth-child(1) {background-image: url(../img/best_006.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -269,7 +280,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 .ranking_box22 ul {width: 250px; height: 200px;
     margin-right: 10px;
     margin-bottom: 10px;}
-.ranking_box22 li:nth-child(1) {background-image: url(/img/best_004.png);
+.ranking_box22 li:nth-child(1) {background-image: url(../img/best_004.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -277,7 +288,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 .ranking_box22 li:nth-child(2) {margin-left: -30px;}
 
 
-.ranking_box23 li:nth-child(1) {background-image: url(/img/best_003.jfif);
+.ranking_box23 li:nth-child(1) {background-image: url(../img/best_003.jfif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -285,13 +296,13 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 
 .ranking_box24 ul {width: 250px; height: 200px;
     margin-right: 10px;}
-.ranking_box24 li:nth-child(1) {background-image: url(/img/best_005.png);
+.ranking_box24 li:nth-child(1) {background-image: url(../img/best_005.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 250px; height: 200px;}
 
-.ranking_box25 li:nth-child(1) {background-image: url(/img/best_002.png);
+.ranking_box25 li:nth-child(1) {background-image: url(../img/best_002.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -326,9 +337,11 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 .new_box11 h2 {color: #245423;
     font-size: 40px;
     position: absolute;
-    top: 120px;}
+    top: 120px;
+    z-index: 10;}
 .new_box11>div {width: 100%; height: 500px;
-    background-color: #9AB65F;}
+    background-color: #9AB65F;
+    position: relative;}
 
 .new_box2 {position: absolute;
     width: 100%; height: 100%;}
@@ -337,7 +350,9 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     justify-content: center;
     align-items: center;}
 .new_box21 ul {margin: 0 50px;}
-.new_box21 li {text-align: center;}
+.new_box21 li {text-align: center;
+    cursor: pointer;}
+    
 .new_box21 li:nth-child(2) {font-size: 18px;
     font-weight: bold;
     color: #ccc;
@@ -345,26 +360,28 @@ section:nth-child(2) {width: 100%; height: 1000px;}
 .new_box21 li:nth-child(3) {font-weight: bold;
     color: lightblue;}
 
-.new_box211 li:nth-child(1) {background-image: url(/img/new_001.jpg);
+.new_box211 li:nth-child(1) {background-image: url(../img/new_001.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.new_box212 li:nth-child(1) {background-image: url(/img/best_006.jpg);
+.new_box212 li:nth-child(1) {background-image: url(../img/best_006.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.new_box213 li:nth-child(1) {background-image: url(/img/new_002.jpg);
+.new_box213 li:nth-child(1) {background-image: url(../img/new_002.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.new_box214 li:nth-child(1) {background-image: url(/img/new_003.jpg);
+.new_box214 li:nth-child(1) {background-image: url(../img/new_003.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
+
+
 
 /* hotdeal 설정 */
 .hotdeal {position: relative; width: 100%; height: 800px;
@@ -382,13 +399,13 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     align-items: center;
     position: absolute;
     left: 100px; top: -70px;}
-.hotdeal_box11 li:nth-child(1) {background-image: url(/img/cream4.jpg);
+.hotdeal_box11 li:nth-child(1) {background-image: url(../img/cream4.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 400px;
     height: 400px;}
-.hotdeal_box11 li:nth-child(2) {background-image: url(/img/cream1.jpg);
+.hotdeal_box11 li:nth-child(2) {background-image: url(../img/cream1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -397,7 +414,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     position: absolute;
     left: 23%;
     bottom: 0;}
-.hotdeal_box11 li:nth-child(3) {background-image: url(/img/pad1.jpg);
+.hotdeal_box11 li:nth-child(3) {background-image: url(../img/pad1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -414,13 +431,13 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     position: absolute;
     right: 100px;
     top: -70px;}
-.hotdeal_box21 li:nth-child(1) {background-image: url(/img/pad3.jpg);
+.hotdeal_box21 li:nth-child(1) {background-image: url(../img/pad3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 400px;
     height: 400px;}
-.hotdeal_box21 li:nth-child(2) {background-image: url(/img/pad4.png);
+.hotdeal_box21 li:nth-child(2) {background-image: url(../img/pad4.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,7 +446,7 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     position: absolute;
     left: 23%;
     bottom: 0;}
-.hotdeal_box21 li:nth-child(3) {background-image: url(/img/pad5.jpg);
+.hotdeal_box21 li:nth-child(3) {background-image: url(../img/pad5.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -463,29 +480,30 @@ section:nth-child(2) {width: 100%; height: 1000px;}
     justify-content: center;
     align-items: center;}
 .health_box21 ul {margin: 0 50px;}
-.health_box21 li {text-align: center;}
+.health_box21 li {text-align: center;
+    cursor: pointer;}
 .health_box21 li:nth-child(2) {font-size: 18px;
     font-weight: bold;
     color: #ccc;
     margin: 5px 0;}
 .health_box21 li:nth-child(3) {font-weight: bold;
     color: lightblue;}
-.health_box211 li:nth-child(1) {background-image: url(/img/health_001.jpg);
+.health_box211 li:nth-child(1) {background-image: url(../img/health_001.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.health_box212 li:nth-child(1) {background-image: url(/img/health_002.jpg);
+.health_box212 li:nth-child(1) {background-image: url(../img/health_002.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.health_box213 li:nth-child(1) {background-image: url(/img/health_003.jpg);
+.health_box213 li:nth-child(1) {background-image: url(../img/health_003.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px; height: 300px;}
-.health_box214 li:nth-child(1) {background-image: url(/img/health_004.jpg);
+.health_box214 li:nth-child(1) {background-image: url(../img/health_004.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -573,7 +591,7 @@ footer {background-color: #999;}
     cursor: pointer;}
 
 /* footer_box3 설정 */
-.footer_logo {background-image: url(/img/h1_logo.png);
+.footer_logo {background-image: url(../img/h1_logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
