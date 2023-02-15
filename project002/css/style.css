@@ -52,7 +52,10 @@ header .menu {display: flex;
 header .menu>li {font-weight: bold;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 20px;}
+    margin-top: 20px;
+    transition: all 0.3s;}
+
+header .menu>li:hover {transform: scale(1.1);}
 
 header .utill {display: flex;
     position: absolute;
@@ -67,7 +70,7 @@ header .utill {display: flex;
 .shop span {position: absolute;
     width: 18px;
     height: 18px;
-    background-color: red;
+    background-color: #7aad6286;
     border-radius: 50%;
     font-size: 16px;
     text-align: center;

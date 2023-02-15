@@ -16,8 +16,10 @@ $(document).ready(function(){
     })
     
     $('.prev_btn').click(function(){
-        if(i>0) i--;
-        if(i==0) i=4;
+        
+      if(i==0) i=5;
+      if(i>0) i--;
+        
         console.log(i)
         
           $('.mainImg_img li').removeClass('on')
