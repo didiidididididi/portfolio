@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+/* root 방식 - 전처리기법 */
+:root {
+    --main-color:#c737bc;
+    --point-color:#ffff00;
+    --bg-color1:#333333;
+    --bg-color2:#cccccc;
+    --bg-color3:#999999;
+    --main-font:'Nanum Gothic';
+    --main-wd:900px;
+}
+
+/* html {scroll-behavior: smooth;} */
+
+/* 헤더설정 */
+header {position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color1);
+    width: 150px; height: 100%;}
+
+/* wrap설정 */
+#wrap {width: 100%;
+    padding-left: 150px;
+    box-sizing: border-box;}
+
+/* 섹션의 높이는 화면의 높이로 자바스크립트를 통해 변환할 예정 */
+#wrap section {width: 100%;
+    height: 800px;}
+
+#wrap section:nth-child(1) {background-color: var(--bg-color2);}
+#wrap section:nth-child(2) {background-color: var(--bg-color3);}
+#wrap section:nth-child(3) {background-color: var(--bg-color2);}
+#wrap section:nth-child(4) {background-color: var(--bg-color3);}
+

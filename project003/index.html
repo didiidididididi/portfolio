@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기리보이팬페이지</title>
+    <!-- 리셋스타일시트 -->
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        a {text-decoration: none;}
+        img {vertical-align: bottom;
+            border: none;}
+        ul,ol {list-style: none;}
+
+        /* 메인컬러설정과 메인폰트설정 */
+
+        /* root 방식 - 전처리기법 */
+        :root {
+            --main-color:#c737bc;
+            --point-color:#ffff00;
+            --bg-color:#333333;
+            --main-font:'Nanum Gothic';
+            --main-wd:900px;
+        }
+
+        a {color: var(--main-color);}
+
+    </style>
+
+    <!-- 외부스타일시트 -->
+    <!-- 1번째 - 롱페이지에서 화면스크롤 전환페이지 작성 -->
+    <link rel="stylesheet" href="css/style01.css">
+    <!-- 2번째 - 고정화면에서 section이 나타나는 구조 -->
+
+    <!-- 3번째 - 총 4개의 html을 연결하는 구조 -->
+
+    <!-- 외부스크립트연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">기리보이</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pro">Profile</a></li>
+                <li><a href="#gal">Gallery</a></li>
+                <li><a href="#album">Album</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="wrap">
+        <section id="home">메인이미지(대표이미지형식)
+            ex-1. 슬라이드 / 2. 동영상 / 3. 안내텍스트
+        </section>
+        <section id="pro">프로필
+            1. 필모그래피형식 (타임라인구조)
+            2. 수상내역 또는 나열텍스트 - 너무많은 인터랙션 하지않기 주의
+        </section>
+        <section id="gal">갤러리
+            1. 썸네일 클릭시 큰 화면으로 전환
+            2. 트레일러형식
+        </section>
+        <section id="album">게시물구조 / 동영상재생방식 / 오락성이 있는 구조.
+            위의 형식과 다른구조의 방식을 채택
+        </section>
+    </div>
+    
+</body>
+</html>
