@@ -1,0 +1,79 @@
+@charset 'utf-8';
+
+/* root 방식 - 전처리기법 */
+:root {
+    --main-color: #115959;
+    --point-color: #2ef2bb;
+    --bg-color: #0a0c0d;
+    --bg-color02: #f2f2f2;
+    --bg-color03: #fdfdfd;
+    --bg-color04: #c2c2c2;
+    --main-font: 'Nanum Gothic';
+    --main-wd: 900px;
+}
+
+/* header설정 */
+header {
+    position: fixed;
+    width: 120px;
+    height: 100%;
+    background-color: var(--bg-color02);
+    color: var(--main-color);
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#wrap {
+    /* width: 100%; */
+    /* 가로값을 100%에서 120px 값을 뺀 계산식 
+    width: calc(100% - 120px);
+    width: -webkit-calc(100% - 120px);
+    width: -moz-calc(100% - 120px); */
+    height: 100%;
+    position: fixed;
+    background-color: var(--bg-color);
+    color: var(--point-color);
+    left: 0;
+    top: 0;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    transition: all 0.5s;
+}
+section:nth-child(1) {
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color03);
+    
+}
+section:nth-child(2) {
+    left: 0px;
+    top: 100%;
+    background-color: var(--bg-color04);
+}
+section:nth-child(3) {
+    left: 0px;
+    top: 100%;
+    background-color: var(--bg-color);
+}
+section:nth-child(4) {
+    left: 100%;
+    top: 0;
+    background-color: var(--bg-color02);
+}
+section:nth-child(5) {
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color03);
+    opacity: 0;
+}
+
+section.on {
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
