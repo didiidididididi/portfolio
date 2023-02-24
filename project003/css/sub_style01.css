@@ -31,3 +31,12 @@ body {overflow-x: hidden;}
 .menu li {font-size: 36px;
     font-weight: bold;
     line-height: 2;}
+.menu li a {color: #fff;
+    animation: ani 6s linear infinite;
+}
+
+@keyframes ani {
+    0% {color: #9890e3;}
+    50% {color: #a18cd1;}
+    100% {color: #b1f4cf;}
+}

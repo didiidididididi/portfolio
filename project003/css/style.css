@@ -208,6 +208,7 @@ header h1 {display: flex;
 }
 .gal_popUpBox li.on {
     opacity: 1;
+    transition: all 1s;
 }
 
 
