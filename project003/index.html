@@ -5,75 +5,264 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기리보이팬페이지</title>
-    <!-- 리셋스타일시트 -->
-    <style>
-        *{margin: 0;
-        padding: 0;}
-        a {text-decoration: none;}
-        img {vertical-align: bottom;
-            border: none;}
-        ul,ol {list-style: none;}
-
-        /* 메인컬러설정과 메인폰트설정 */
-
-        /* root 방식 - 전처리기법 */
-        :root {
-            --main-color:#115959;
-    --point-color:#2ef2bb;
-    --bg-color:#0a0c0d;
-            --main-font:'Nanum Gothic';
-            --main-wd:900px;
-        }
-
-        a {color: var(--main-color);}
-
-    </style>
-
-    <!-- 외부스타일시트 -->
-    <!-- 1번째 - 롱페이지에서 화면스크롤 전환페이지 작성 -->
-    <!-- <link rel="stylesheet" href="css/style01.css"> -->
-    <!-- 2번째 - 고정화면에서 section이 나타나는 구조 -->
-    <link rel="stylesheet" href="css/style02.css">
-    <!-- 3번째 - 총 4개의 html을 연결하는 구조 -->
-
+    
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- 외부스크립트연결 -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <script src="js/jquery-ui.min.js"></script>
 
     <script src="js/js.js"></script>
+    <script src="https://use.fontawesome.com/19be655260.js"></script>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">기리보이</a></h1>
+        <h1><a href="sub01.html">GIRI BOY</a></h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#pro">Profile</a></li>
-                <li><a href="#gal">Gallery</a></li>
-                <li><a href="#album">Album</a></li>
-                <li><a href="#">box1</a></li>
+            <ul class="menu">
+                <li class="on"><a href="#home">HOME</a></li>
+                <li><a href="#pro">PROFILE</a></li>
+                <li><a href="#gal">GALLERY</a></li>
+                <li><a href="#album">ALBUM</a></li>
             </ul>
         </nav>
     </header>
 
     <div id="wrap">
-        <section id="home">메인이미지(대표이미지형식)
-            ex-1. 슬라이드 / 2. 동영상 / 3. 안내텍스트
+        <section id="home">
+            <div>
+                <ul class="main">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </section>
-        <section id="pro">프로필
-            1. 필모그래피형식 (타임라인구조)
-            2. 수상내역 또는 나열텍스트 - 너무많은 인터랙션 하지않기 주의
+        <section id="pro">
+            <p class="pro_img"></p>
+            <h2>PROFILE</h2>
+            <div class="pro_txt">
+                <ul>
+                    <li>본명</li>
+                    <li>홍시영</li>
+                </ul>
+                <ul>
+                    <li>출생</li>
+                    <li>1991년 1월 24일</li>
+                </ul>
+                <ul>
+                    <li>국적</li>
+                    <li>대한민국</li>
+                </ul>
+                <ul>
+                    <li>신체</li>
+                    <li>176cm, 77kg, A형</li>
+                </ul>
+                <ul>
+                    <li>학력</li>
+                    <li>초당초등학교 (졸업)<br>
+                        신방학중학교 (졸업)<br>
+                        창동고등학교 (졸업)<br>
+                        국제예술대학교 (실용음악학 / 전문학사)</li>
+                </ul>
+                <ul>
+                    <li>소속사</li>
+                    <li>Just Music (부사장)<br>
+                        WEDAPLUGG RECORDS (대표)<br>
+                        I4P (대표)</li>
+                </ul>
+                <ul>
+                    <li>소속 크루</li>
+                    <li>벅와일즈, 두메인(Do'main)<br>
+                        우주비행(WYBH)</li>
+                </ul>
+                <ul>
+                    <li>데뷔</li>
+                    <li>2011년 디지털 싱글 You Look So Good To Me<br>
+                        (데뷔일로부터 +4108일, 11주년)</li>
+                </ul>
+                <ul>
+                    <li>병역</li>
+                    <li>군면제</li>
+                </ul>
+                <ul>
+                    <li>직업</li>
+                    <li>래퍼, 프로듀서, 배우</li>
+                </ul>
+                <ul>
+                    <li>MBTI</li>
+                    <li>INTP</li>
+                </ul>
+            </div>
         </section>
-        <section id="gal">갤러리
-            1. 썸네일 클릭시 큰 화면으로 전환
-            2. 트레일러형식
+        <section id="gal">
+            <div class="gal_bg">
+                <ul class="gal_img">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="gal_popUp">
+                <div class="gal_popUpBox">
+                    <ul class="gal_popUp1">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="gal_popUp2">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="gal_popUp3">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="gal_popUp4">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="gal_popUp5">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <span>X</span>
+                <div class="arrow">
+                    <p class="arrow_left"><i class="fa fa-chevron-left" aria-hidden="true"></i></p>
+                    <p class="arrow_right"><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+                </div>
+            </div>
         </section>
-        <section id="album">게시물구조 / 동영상재생방식 / 오락성이 있는 구조.
-            위의 형식과 다른구조의 방식을 채택
-        </section>
-        <section id="box1">게시물구조 / 동영상재생방식 / 오락성이 있는 구조.
-            위의 형식과 다른구조의 방식을 채택
+        <section id="album">
+            <div class="album_play">
+                <ul class="album_img">
+                    <li class="on">
+                        <source id="audioSource" src="img/GIRIBOY_우리 서로 사랑하지는 말자.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_예쁘잖아.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_교통정리.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_호구(Prod. by Fisherman of wybh) (Feat. BrotherSu).mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_눈이 오던 날 (Feat. 쏠 (SOLE)).mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_농담처럼(Prod. Zion.T).mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_시공간.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_사랑이었나봐.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_빈집.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_wewantourmoneyback(Feat. YoungB, Kid Milli).mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_Flex.mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                    <li>
+                        <source id="audioSource" src="img/GIRIBOY_을(feat. 서동현).mp3" type="audio/mp3">
+                        <p class="play on"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </li>
+                </ul>
+                <ul class="album_title">
+                    <li class="on">우리 서로 사랑하지는 말자</li>
+                    <li>예쁘잖아</li>
+                    <li>교통정리 (Feat. 헤이즈)</li>
+                    <li>호구 (Prod. By Fisferman of wybh)</li>
+                    <li>눈이 오던 날</li>
+                    <li>농담처럼</li>
+                    <li>시공간</li>
+                    <li>사랑이었나봐</li>
+                    <li>빈집 (Prod. By dnss) (Feat. THAMA)</li>
+                    <li>wewantourmoneyback</li>
+                    <li>flex</li>
+                    <li>을 (Feat. BIG Naughty)</li>
+                </ul>
+                <!-- <audio id="audioContainer">
+                    <source id="audioSource" src="img/GIRIBOY_우리 서로 사랑하지는 말자.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_예쁘잖아.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_교통정리.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_호구(Prod. by Fisherman of wybh) (Feat. BrotherSu).mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_눈이 오던 날 (Feat. 쏠 (SOLE)).mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_농담처럼(Prod. Zion.T).mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_시공간.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_사랑이었나봐.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_빈집.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_wewantourmoneyback(Feat. YoungB, Kid Milli).mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_Flex.mp3" type="audio/mp3">
+                    <source id="audioSource" src="img/GIRIBOY_을(feat. 서동현).mp3" type="audio/mp3">
+                </audio> -->
+                <div class="button">
+                    <p class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></p>
+                    <!-- <div class="button_play">
+                        <p class="play"><i class="fa fa-play" aria-hidden="true"></i></p>
+                        <p class="pause on"><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    </div> -->
+                    <p class="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <div class="album_chartBox">
+                <ul class="album_chart">
+                    <li class="on">우리 서로 사랑하지는 말자</li>
+                    <li>예쁘잖아</li>
+                    <li>교통정리 (Feat. 헤이즈)</li>
+                    <li>호구 (Prod. By Fisferman of wybh)</li>
+                    <li>눈이 오던 날</li>
+                    <li>농담처럼</li>
+                    <li>시공간</li>
+                    <li>사랑이었나봐</li>
+                    <li>빈집 (Prod. By dnss) (Feat. THAMA)</li>
+                    <li>wewantourmoneyback (Prod. By Lemac) (Feat. Young B, Kid Milli)</li>
+                    <li>flex</li>
+                    <li>을 (Feat. BIG Naughty)</li>
+                </ul>
+            </div>
         </section>
     </div>
     

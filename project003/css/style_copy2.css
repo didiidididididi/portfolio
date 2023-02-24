@@ -1,0 +1,503 @@
+@charset 'UTF-8';
+
+/* 기본설정 */
+*{margin: 0; padding: 0;}
+img{ vertical-align: bottom;
+    border: none;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+body {overflow-x: hidden;}
+
+
+/* 헤더설정 */
+header {}
+header h1 {display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 120px;
+    position: absolute;
+    top: 50px;
+    z-index: 3;
+}
+
+/* 메뉴설정 */
+.menu {position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    z-index: 70;}
+.menu li {font-size: 30px;
+    font-weight: bold;}
+.menu li a {transition: all 0.5s;}
+
+/* 메뉴 호버값 */
+.menu li:nth-child(1):hover a {color: #fff;
+        border-color: #fff;}
+.menu li:nth-child(2):hover a {color: #132c85;
+        border-color: #132c85;}
+.menu li:nth-child(3):hover a {color: #fff;
+        border-color: #fff;}
+.menu li:nth-child(4):hover a {color: #132c85;
+        border-color: #132c85;}
+
+/* 메뉴 온값 */
+.menu li:nth-child(1).on a {color: #fff;
+        border-color: #fff;}
+.menu li:nth-child(2).on a {color: #132c85;
+        border-color: #132c85;}
+.menu li:nth-child(3).on a {color: #fff;
+        border-color: #fff;}
+.menu li:nth-child(4).on a {color: #132c85;
+        border-color: #132c85;}
+
+/* 메인설정 */
+#home {width: 100%; height: 100%;
+    background-color: #bfbfbf;
+    background-image: url(../img/album007.jpg);
+    background-position: center center;
+    background-size: contain;
+    }
+
+.main {width: 100%; height: 100%;}
+.main li:nth-child(1) {background-image: url(../img/main01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%; height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    }
+.main li:nth-child(2) {background-image: url(../img/main02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%; height: 90%;
+    position: absolute;
+    left: 22%;
+    bottom: 0;
+    z-index: 2;}
+.main li:nth-child(3) {background-image: url(../img/main03.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 40%; height: 100%;
+    position: absolute;
+    right: -3%;
+    bottom: 0;}
+
+/* 프로필설정 */
+#pro {background-color: aliceblue;
+    width: 100%; height: 100%;
+    position: relative;
+    z-index: 50;}
+#pro h2 {position: absolute;
+    left: 50%;
+    margin-left: -10%;
+    top: 50%;
+    font-size: 48px;}
+.pro_img {background-image: url(../img/main03.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 50%; height: 100%;
+    position: absolute;
+    left: -7.5%;
+    top: 0;}
+
+/* 프로필 텍스트설정 */
+.pro_txt {width: 50%; height: 100%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 100px;}
+
+.pro_txt ul {display: flex;}
+.pro_txt li:nth-child(1) {font-size: 20px;
+    font-weight: bold;
+    color: #132c85;
+    width: 120px;}
+.pro_txt li:nth-child(2) {margin-left: 150px;
+    font-weight: bold;}
+
+/* 갤러리설정 */
+#gal {background-image: url(../img/album009.jpg);
+    width: 100%; height: 100%;
+    background-size: contain;}
+.gal_bg { width: 100%; height: 100%;}
+.gal_img {display: flex;
+    width: 100%; height: 100%;
+    justify-content: center;}
+.gal_img li {}
+.gal_img li:nth-child(1) {background-image: url(../img/gallery01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%; height: 100%;
+    transform: rotate(-10deg);
+    cursor: pointer;}
+.gal_img li:nth-child(2) {background-image: url(../img/gallery02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%; height: 100%;
+    transform: rotate(11.31deg);
+    cursor: pointer;}
+.gal_img li:nth-child(3) {background-image: url(../img/gallery03.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%; height: 100%;
+    cursor: pointer;}
+.gal_img li:nth-child(4) {background-image: url(../img/gallery04.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%; height: 100%;
+    transform: rotate(-11.31deg);
+    cursor: pointer;}
+.gal_img li:nth-child(5) {background-image: url(../img/gallery05.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%; height: 100%;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+
+
+/* 갤러리 팝업설정 */
+.gal_popUp {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9997;
+    display: none;
+}
+.gal_popUpBox {
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    position: relative;
+    overflow: hidden;
+}
+/* 팝업 ul설정 */
+.gal_popUpBox ul {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+}
+
+.gal_popUpBox ul.on {
+    opacity: 1;
+}
+
+.gal_popUpBox li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.gal_popUpBox li.on {
+    opacity: 1;
+}
+
+
+
+/* 팝업1설정 */
+.gal_popUp1 li:nth-child(1) {background-image: url(../img/giriboy007.jfif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;}
+.gal_popUp1 li:nth-child(2) {background-image: url(../img/giriboy008.jfif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+.gal_popUp1 li:nth-child(3) {background-image: url(../img/giriboy009.jfif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+.gal_popUp1 li:nth-child(4) {background-image: url(../img/giriboy019.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+
+/* 팝업2설정 */
+.gal_popUp2 li:nth-child(1) {background-image: url(../img/giriboy013.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+.gal_popUp2 li:nth-child(2) {background-image: url(../img/giriboy022.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+.gal_popUp2 li:nth-child(3) {background-image: url(../img/giriboy028.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+.gal_popUp2 li:nth-child(4) {background-image: url(../img/giriboy024.jfif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height: 100%;}
+
+/* 팝업3설정 */
+.gal_popUp3 li:nth-child(1) {background-image: url(../img/giriboy005.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        width:100%; height:100%;
+    }
+.gal_popUp3 li:nth-child(2) {background-image: url(../img/giriboy001.jfif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+.gal_popUp3 li:nth-child(3) {background-image: url(../img/giriboy006.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+.gal_popUp3 li:nth-child(4) {background-image: url(../img/giriboy004.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+
+/* 팝업4설정 */
+.gal_popUp4 li:nth-child(1) {background-image: url(../img/giriboy003.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+.gal_popUp4 li:nth-child(2) {background-image: url(../img/giriboy002.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+.gal_popUp4 li:nth-child(3) {background-image: url(../img/giriboy011.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+.gal_popUp4 li:nth-child(4) {background-image: url(../img/giriboy026.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%; height:100%;}
+
+/* 팝업5설정 */
+.gal_popUp5 li:nth-child(1) {background-image: url(../img/giriboy017.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    }
+.gal_popUp5 li:nth-child(2) {background-image: url(../img/giriboy016.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    }
+.gal_popUp5 li:nth-child(3) {background-image: url(../img/giriboy015.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    }
+.gal_popUp5 li:nth-child(4) {background-image: url(../img/giriboy014.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    }
+
+.gal_popUpBox>p.on {opacity: 1;}
+
+.gal_popUp span {width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 2px solid #fff;
+            position: absolute;
+            right: 200px;
+            top: 200px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 1.8;
+            cursor: pointer;
+            z-index: 100;}
+.gal_popUp span:hover {background-color: rgba(255, 255, 255, 1);
+                        color: #888;}
+
+.gal_popUp>.arrow {
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 50px;
+    color: #fff;
+    }
+.gal_popUp>.arrow i {cursor: pointer;
+    transition: all 0.5s;}
+.gal_popUp>.arrow i:hover {color: #000;}
+
+/* 앨범설정 */
+#album {background-color: #bfbfbf;
+    width: 100%; height: 100%;
+    position: relative;
+    background-image: url(../img/giriboy029.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+/* 앨범이미지 묶음 설정 */
+.album_play {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* 앨범이미지 설정 */
+.album_img {width: 100%; height: 50%;
+    padding-bottom: 30px;}
+.album_img li {width: 50%; height: 50%;
+    position: absolute;
+    display: none;}
+.album_img li:nth-child(1) {background-image: url(../img/album001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(2) {background-image: url(../img/album002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(3) {background-image: url(../img/album003.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(4) {background-image: url(../img/album004.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(5) {background-image: url(../img/album005.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(6) {background-image: url(../img/album006.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(7) {background-image: url(../img/album007.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(8) {background-image: url(../img/album008.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(9) {background-image: url(../img/album009.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(10) {background-image: url(../img/album010.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(11) {background-image: url(../img/album011.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.album_img li:nth-child(12) {background-image: url(../img/album012.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.album_img li.on {display: block;}
+
+/* 앨범이미지 p값 설정 */
+.album_img p {position: absolute;
+    font-size: 48px;
+    bottom: -120px;
+    left: 47%;
+    z-index: 50;
+    cursor: pointer;
+    display: none;}
+.album_img p.on {display: block;}
+
+/* 앨범 제목 설정 */
+.album_title {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album_title li {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: none;}
+.album_title li.on {display: block;}
+
+/* 노래재생 설정 */
+.button {width: 50%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 130px;
+    justify-content: space-around;}
+.button p {cursor: pointer;
+    font-size: 48px;
+    margin: 0 50px;}
+.button_play p {position: absolute;
+    left: 35%;
+    display: none;}
+.button_play p.on {display: block;}
+
+/* 앨범차트 설정 */
+.album_chartBox {
+    margin-left: 50%;}
+.album_chart {position: relative;
+    background: rgba(19, 44, 133, 0.5);}
+.album_chart li {
+    width: 100%;
+    line-height: 3.3;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+.album_chart li:hover {background-color: #132c85;}
+.album_chart li.on {background-color: #132c85;}
+
+
