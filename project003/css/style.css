@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 /* 기본설정 */
 *{margin: 0; padding: 0;}
@@ -7,7 +8,8 @@ img{ vertical-align: bottom;
 ul,ol {list-style: none;}
 a {text-decoration: none;
     color: #000;}
-body {overflow-x: hidden;}
+body {overflow-x: hidden;
+    font-family: 'Dongle', sans-serif;}
 
 
 /* 헤더설정 */
@@ -15,23 +17,25 @@ header {}
 header h1 {display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 120px;
+    font-size: 140px;
     position: absolute;
     top: 50px;
     z-index: 3;
 }
+header h1 a {transition: all 0.5s;}
+header h1 a:hover {color: #132c85;}
 
 /* 메뉴설정 */
 .menu {position: fixed;
     right: 0;
     top: 50%;
-    margin-top: -50px;
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     z-index: 70;}
-.menu li {font-size: 30px;
+.menu li {font-size: 48px;
     font-weight: bold;}
 .menu li a {transition: all 0.5s;}
 
@@ -97,7 +101,7 @@ header h1 {display: flex;
     left: 50%;
     margin-left: -10%;
     top: 50%;
-    font-size: 48px;}
+    font-size: 60px;}
 .pro_img {background-image: url(../img/main03.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -116,12 +120,13 @@ header h1 {display: flex;
     padding-left: 100px;}
 
 .pro_txt ul {display: flex;}
-.pro_txt li:nth-child(1) {font-size: 20px;
+.pro_txt li:nth-child(1) {font-size: 30px;
     font-weight: bold;
     color: #132c85;
     width: 120px;}
 .pro_txt li:nth-child(2) {margin-left: 150px;
-    font-weight: bold;}
+    font-weight: bold;
+    font-size: 27px;}
 
 /* 갤러리설정 */
 #gal {background-image: url(../img/album009.jpg);
@@ -137,32 +142,43 @@ header h1 {display: flex;
     background-size: contain;
     width: 20%; height: 100%;
     transform: rotate(-10deg);
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all 0.5s;}
+.gal_img li:nth-child(1):hover {transform: rotate(0deg);}
+
 .gal_img li:nth-child(2) {background-image: url(../img/gallery02.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20%; height: 100%;
     transform: rotate(11.31deg);
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all 0.5s;}
+.gal_img li:nth-child(2):hover {transform: rotate(0deg);}
+
 .gal_img li:nth-child(3) {background-image: url(../img/gallery03.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20%; height: 100%;
     cursor: pointer;}
+
 .gal_img li:nth-child(4) {background-image: url(../img/gallery04.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20%; height: 100%;
     transform: rotate(-11.31deg);
-    cursor: pointer;}
+    cursor: pointer;
+    transition: all 0.5s;}
+.gal_img li:nth-child(4):hover {transform: rotate(0deg);}
+
 .gal_img li:nth-child(5) {background-image: url(../img/gallery05.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20%; height: 100%;
     transform: rotate(10deg);
     cursor: pointer;
+    transition: all 0.5s;
 }
-
+.gal_img li:nth-child(5):hover {transform: rotate(0deg);}
 
 
 /* 갤러리 팝업설정 */
@@ -364,7 +380,7 @@ header h1 {display: flex;
 #album {background-color: #bfbfbf;
     width: 100%; height: 100%;
     position: relative;
-    background-image: url(../img/giriboy029.jpg);
+    background-image: url(../img/giriboy031.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,7 +480,7 @@ header h1 {display: flex;
 }
 .album_title li {
     position: absolute;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #fff;
     display: none;}
@@ -492,9 +508,9 @@ header h1 {display: flex;
     background: rgba(19, 44, 133, 0.5);}
 .album_chart li {
     width: 100%;
-    line-height: 3.3;
+    line-height: 2.7;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
     color: #fff;
 }
