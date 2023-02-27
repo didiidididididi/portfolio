@@ -22,7 +22,8 @@ header h1 {display: flex;
     top: 50px;
     z-index: 3;
 }
-header h1 a {transition: all 0.5s;}
+header h1 a {transition: all 0.5s;
+    color: #0d0d0d;}
 header h1 a:hover {color: #132c85;}
 
 /* 메뉴설정 */
@@ -36,8 +37,10 @@ header h1 a:hover {color: #132c85;}
     align-items: end;
     z-index: 70;}
 .menu li {font-size: 48px;
-    font-weight: bold;}
-.menu li a {transition: all 0.5s;}
+    font-weight: bold;
+    }
+.menu li a {transition: all 0.5s;
+    color: #0d0d0d;}
 
 /* 메뉴 호버값 */
 .menu li:nth-child(1):hover a {color: #fff;
@@ -101,7 +104,8 @@ header h1 a:hover {color: #132c85;}
     left: 50%;
     margin-left: -10%;
     top: 50%;
-    font-size: 60px;}
+    font-size: 60px;
+    color: #0d0d0d;}
 .pro_img {background-image: url(../img/main03.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -126,7 +130,8 @@ header h1 a:hover {color: #132c85;}
     width: 120px;}
 .pro_txt li:nth-child(2) {margin-left: 150px;
     font-weight: bold;
-    font-size: 27px;}
+    font-size: 27px;
+    color: #0d0d0d;}
 
 /* 갤러리설정 */
 #gal {background-image: url(../img/album009.jpg);
