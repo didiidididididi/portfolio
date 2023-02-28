@@ -1,35 +1,3 @@
-$(document).ready(function(){
-    $('nav li').click(function(){
-
-        let i = $(this).index();
-        $('article').removeClass('on')
-        $('article').eq(i).addClass('on');
-        $('.moon').addClass('on')
-
-    })
-
-    $('nav>ul>li').eq(1).click(function(e){
-        e.preventDefault()
-        $('header').addClass('on')
-    })
-    $('nav>ul>li').eq(2).click(function(e){
-        e.preventDefault()
-        $('header').addClass('on')
-    })
-    $('nav>ul>li').eq(3).click(function(e){
-        e.preventDefault()
-        $('header').addClass('on')
-    })
-    $('nav>ul>li').eq(0).click(function(){
-        $('header').removeClass('on')
-        $('.moon').removeClass('on')
-    })
-
-})
-
-
-// 별 애니메이션
-
 function init() {
 
     //estrelas
@@ -90,3 +58,15 @@ function init() {
 }
 
 window.onload = init;
+
+
+$(document).ready(function(){
+
+    $('.menu ul li').click(function(){
+
+        let ii = $(this).index();
+        $('article').removeClass('on')
+        $('.project article').eq(ii).addClass('on');
+
+    })
+})
