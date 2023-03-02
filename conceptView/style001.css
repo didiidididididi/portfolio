@@ -135,20 +135,198 @@ article:nth-child(2) {display: flex;
     margin: -20px 0;
 }
 
+article:nth-child(2) span {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px 30px;
+    transition: all 0.5s;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;}
+
+/* 팝업섹션설정 */
+#popUp {
+    display: none;
+}
+.popUp {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9997;
+}
+
+/* 팝업박스1 설정 */
+.popUpBox1 {
+    width: 980px;
+    height: 800px;
+    background-color: #C4CFFF;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -400px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0;
+    display: none;
+}
+.popUpBox1.on {opacity: 1;
+    display: block;}
+
+.popUpBox1 .popUp_size {
+    width: 980px;
+    height: 800px;
+    background-color: #FFC4C4;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 30px 30px 30px 30px;
+}
+
+/* 특정부분 스크롤바 없애기 */
+.popUpBox1 .popUp_size{-ms-overflow-style: none;}
+.popUpBox1 .popUp_size::-webkit-scrollbar {display: none;}
+
+.popUpBox1 .bar {
+    width: 980px;
+    height: 50px;
+    position: fixed;
+    border-radius: 30px 30px 0 0;
+}
+.popUpBox1 i {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.popUpBox1 .img {
+    width: 100%;
+    height: 4794px;
+    background-image: url(olive_concept02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 팝업박스2 설정 */
+.popUpBox2 {
+    width: 980px;
+    height: 800px;
+    background-color: #C4CFFF;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -400px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0;
+    display: none;
+}
+.popUpBox2.on {opacity: 1;
+    display: block;}
+
+.popUpBox2 .popUp_size {
+    width: 980px;
+    height: 800px;
+    background-color: #FFC4C4;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 30px 30px 30px 30px;
+}
+
+/* 특정부분 스크롤바 없애기 */
+.popUpBox2 .popUp_size{-ms-overflow-style: none;}
+.popUpBox2 .popUp_size::-webkit-scrollbar {display: none;}
+
+.popUpBox2 .bar {
+    width: 980px;
+    height: 50px;
+    position: fixed;
+    border-radius: 30px 30px 0 0;
+}
+.popUpBox2 i {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.popUpBox2 .img {
+    width: 100%;
+    height: 4794px;
+    background-image: url(olive_concept02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 팝업박스3 설정 */
+.popUpBox3 {
+    width: 980px;
+    height: 800px;
+    background-color: #C4CFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -400px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0;
+    display: none;
+}
+.popUpBox3.on {opacity: 1;
+    display: block;}
+.popUpBox3 .popUp_size {
+    width: 980px;
+    height: 800px;
+    background-color: #FFC4C4;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 30px 30px 30px 30px;
+}
+/* 특정부분 스크롤바 없애기 */
+.popUpBox3 .popUp_size{-ms-overflow-style: none;}
+.popUpBox3 .popUp_size::-webkit-scrollbar {display: none;}
+
+.popUpBox3 .bar {
+    width: 980px;
+    height: 50px;
+    position: fixed;
+    border-radius: 30px 30px 0 0;
+}
+.popUpBox3 i {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.popUpBox3 .img {
+    width: 100%;
+    height: 3725px;
+    background-image: url(grboy_concept02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+/* 메인 원 설정 */
 .moon {background: linear-gradient(rgb(104, 16, 131), skyBlue, rgb(147, 42, 168));
     position: absolute;
     width: 500px;
@@ -161,7 +339,7 @@ article:nth-child(2) {display: flex;
     z-index: 9;
     transition: all 2s;}
 
-.moon p {
+/* .moon p {
     background-image: url(bazzi_icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -170,7 +348,7 @@ article:nth-child(2) {display: flex;
     position: absolute;
     left: 25%;
     top: 25%;
-}
+} */
 
 .moon.on {opacity: 0; display: none;}
 

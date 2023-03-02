@@ -6,6 +6,14 @@ $(document).ready(function(){
         $('article').eq(i).addClass('on');
         $('.moon').addClass('on')
 
+        if(i==2){
+        $('.ps li').eq(1).stop().animate({'height':'90%'},1800)
+        }
+        else{
+            $('.ps li').eq(1).stop().animate({'height':'0'},1800)
+        }
+
+
     })
 
     $('nav>ul>li').eq(1).click(function(e){
@@ -24,6 +32,37 @@ $(document).ready(function(){
         $('header').removeClass('on')
         $('.moon').removeClass('on')
     })
+
+    // #show_olive 클릭했을때 해당 팝업이 열려라
+    $('#show_olive').click(function(){
+        let abc = $(this).index()
+        console.log(abc)
+
+        $('#popUp').fadeIn();
+        $('.popUp div').eq(1).addClass('on')
+    })
+
+    $('#show_grboy').click(function(){
+
+        $('#popUp').fadeIn();
+        $('.popUp div').eq(2).addClass('on')
+    })
+
+    $('#show_aqua').click(function(){
+
+        $('#popUp').fadeIn()
+        $('.popUp div').eq(0).addClass('on')
+    })
+
+
+
+    // 팝업에 span을 클릭했을때 팝업이 닫혀라
+    $('.popUp span').click(function(){
+
+        $('#popUp').fadeOut();
+        $('.popUp div').removeClass('on')
+    })
+
 
 })
 
