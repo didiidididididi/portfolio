@@ -8,9 +8,19 @@ $(document).ready(function(){
 
         if(i==2){
         $('.ps li').eq(1).stop().animate({'height':'90%'},1800)
+        $('.ai li').eq(1).stop().animate({'height':'85%'},1800)
+        $('.html li').eq(1).stop().animate({'height':'95%'},1800)
+        $('.css li').eq(1).stop().animate({'height':'85%'},1800)
+        $('.js li').eq(1).stop().animate({'height':'80%'},1800)
+        $('.figma li').eq(1).stop().animate({'height':'75%'},1800)
         }
         else{
             $('.ps li').eq(1).stop().animate({'height':'0'},1800)
+            $('.ai li').eq(1).stop().animate({'height':'0'},1800)
+            $('.html li').eq(1).stop().animate({'height':'0'},1800)
+            $('.css li').eq(1).stop().animate({'height':'0'},1800)
+            $('.js li').eq(1).stop().animate({'height':'0'},1800)
+            $('.figma li').eq(1).stop().animate({'height':'0'},1800)
         }
 
 
@@ -19,18 +29,22 @@ $(document).ready(function(){
     $('nav>ul>li').eq(1).click(function(e){
         e.preventDefault()
         $('header').addClass('on')
+        $('.logo').addClass('on')
     })
     $('nav>ul>li').eq(2).click(function(e){
         e.preventDefault()
         $('header').addClass('on')
+        $('.logo').addClass('on')
     })
     $('nav>ul>li').eq(3).click(function(e){
         e.preventDefault()
         $('header').addClass('on')
+        $('.logo').addClass('on')
     })
     $('nav>ul>li').eq(0).click(function(){
         $('header').removeClass('on')
         $('.moon').removeClass('on')
+        $('.logo').removeClass('on')
     })
 
     // #show_olive 클릭했을때 해당 팝업이 열려라

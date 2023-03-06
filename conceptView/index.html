@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>민수 Portfolio</title>
-    <link rel="shortcut icon" href="bazzi_icon.png">
+    <link rel="shortcut icon" href="/img/bazzi_icon.png">
 
     <!-- 외부스타일시트연결 -->
-    <link rel="stylesheet" href="style001.css">
+    <link rel="stylesheet" href="style.css">
     <!-- 제이쿼리 CDN -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- 외부스크립트연결 -->
-    <script src="js001.js"></script>
+    <script src="js.js"></script>
+    <script src="https://use.fontawesome.com/19be655260.js"></script>
 
 </head>
 <body>
@@ -63,7 +64,7 @@
     </div>
 
     <div class="logo">
-        <h2><a href="index001 copy.html">MINSU</a></h2>
+        <h2><a href="index.html">MINSU</a></h2>
     </div>
     <section>
         <article class="on">
@@ -76,27 +77,122 @@
             <div class="aqua">
                 <p>대전아쿠아리움 리뉴얼 웹사이트</p>
                 <p></p>
-                <p><a href="project001/index.html" target="_blank">사이트 연결</a></p>
+                <p>
+                    <span id="show_aqua">디자인 컨셉보기</span>
+                    <a href="project001/index.html" target="_blank">사이트 연결</a>
+                </p>
             </div>
             <div class="olive">
                 <p>올리브영 리뉴얼 웹사이트</p>
                 <p></p>
-                <p><a href="project002/index.html" target="_blank">사이트 연결</a></p>
+                <p>
+                    <span id="show_olive">디자인 컨셉보기</span>
+                    <a href="project002/index.html" target="_blank">사이트 연결</a>
+                </p>
             </div>
             <div class="grboy">
                 <p>기리보이 팬페이지</p>
                 <p></p>
-                <p><a href="project003/index.html" target="_blank">사이트 연결</a></p>
+                <p>
+                    <span id="show_grboy">디자인 컨셉보기</span>
+                    <a href="project003/index.html" target="_blank">사이트 연결</a>
+                </p>
             </div>
         </article>
 
         <article>
-            skill_나의 작품을 구성하는데 있어서 기술력을 보여준다.
+            <!-- skill_나의 작품을 구성하는데 있어서 기술력을 보여준다. -->
+            <div class="graph">
+                <div class="graph_box">
+                    <h2>저는 이런 툴을 다룰 수 있습니다.</h2>
+                    <div class="graphBox1">
+                        <ul class="ps">
+                            <li>90%</li>
+                            <li></li>
+                        </ul>
+                        <ul class="ai">
+                            <li>85%</li>
+                            <li></li>
+                        </ul>
+                        <ul class="html">
+                            <li>95%</li>
+                            <li></li>
+                        </ul>
+                        <ul class="css">
+                            <li>85%</li>
+                            <li></li>
+                        </ul>
+                        <ul class="js">
+                            <li>80%</li>
+                            <li></li>
+                        </ul>
+                        <ul class="figma">
+                            <li>75%</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <ul class="graph_txt">
+                        <li>Ps</li>
+                        <li>Ai</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
         </article>
 
         <article>
-            profile_인포그래픽이력서를 이미지 또는 도표화작업으로 삽입
+            <!-- profile_인포그래픽이력서를 이미지 또는 도표화작업으로 삽입 -->
+            <div class="profile">
+                <ul>
+                    <li><img src="../img/bazzi_icon.png" alt=""></li>
+                    <li>우주같은 잠재력을 가진 퍼블리셔 정민수입니다.</li>
+                    <li>#책임감 #꼼꼼함 #노력</li>
+                </ul>
+            </div>
+            <div class="profile_txt">
+                <ul>
+                    <li>Contact</li>
+                    <li>finpin2889@naver.com</li>
+                </ul>
+                <ul>
+                    <li>Education</li>
+                    <li>2022.10 ~ 2023.03<br>
+                        [디지털디자인]스마트혼합-UI/UX반응형 웹디자인&웹퍼블리셔(코딩)개발자</li>
+                </ul>
+                <ul>
+                    <li>License</li>
+                    <li>GTQ 1급</li>
+                </ul>
+            </div>
         </article>
+    </section>
+    <section id="popUp">
+        <div class="popUp">
+            <div class="popUpBox1">
+                <ul class="popUp_size">
+                    <li class="bar"></li>
+                    <li class="img"></li>
+                </ul>
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="popUpBox2">
+                <ul class="popUp_size">
+                    <li class="bar"></li>
+                    <li class="img"></li>
+                </ul>
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="popUpBox3">
+                <ul class="popUp_size">
+                    <li class="bar"></li>
+                    <li class="img"></li>
+                </ul>
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+        </div>
     </section>
     
 </body>

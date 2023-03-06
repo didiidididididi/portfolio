@@ -36,7 +36,9 @@ nav li {width: 25%;
 .subMenu {display: none;}
 .skillMenu {display: none;}
 
-.logo {}
+.logo {opacity: 0;
+    transition: all 2s;}
+.logo.on {opacity: 1;}
 .logo h2 {position: absolute;
     left: 20%;
     top: 10px;
@@ -332,6 +334,13 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
 }
+.graph_box h2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 100px;
+    width: 100%;
+}
 
 .graphBox1 {display: flex;
     width: 90%;
@@ -340,7 +349,7 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;}
+    margin-top: 300px;}
 .graphBox1 ul {
     display: flex;
     flex-direction: column;
@@ -349,6 +358,10 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
     justify-content: flex-end;
     align-items: center;
     margin-top: -150px;
+}
+.graphBox1 li:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
 }
 .graphBox1 li:nth-child(2) {
     border-radius: 30px 30px 0 0;
@@ -362,31 +375,31 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 }
 .ai li:nth-child(2) {
     width: 50px;
-    height: 85%;
+    height: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     margin-top: 20px;
 }
 .html li:nth-child(2) {
     width: 50px;
-    height: 95%;
+    height: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     margin-top: 20px;
 }
 .css li:nth-child(2) {
     width: 50px;
-    height: 85%;
+    height: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     margin-top: 20px;
 }
 .js li:nth-child(2) {
     width: 50px;
-    height: 80%;
+    height: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     margin-top: 20px;
 }
 .figma li:nth-child(2) {
     width: 50px;
-    height: 75%;
+    height: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     margin-top: 20px;
 }
@@ -405,8 +418,64 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 .graph_txt li {
     width: 15%;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+/* 프로필설정 */
+article:nth-child(4) {display: flex;
+    width: 100%;
+    height: 100%;}
+.profile {
+    width: 50%;
+    height: 100%;
+}
+.profile ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.profile ul li {padding: 20px;}
+.profile ul li:nth-child(1) {filter: drop-shadow(10px 10px 10px red);}
+.profile ul li:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile ul li:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s linear infinite;
+}
+
+@keyframes gradient {
+    0% {-webkit-filter: hue-rotate(0deg);}
+    100% {-webkit-filter: hue-rotate(-360deg);}
+}
+
+.profile_txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.profile_txt ul {display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;}
+.profile_txt ul li:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+    width: 20%;
+    color: #a18cd1;
+}
 
 
 /* 메인 원 설정 */
