@@ -109,7 +109,7 @@ article:nth-child(2) {display: flex;
 
 .aqua p:nth-child(1) {font-size: 24px;}
 .aqua p:nth-child(2) {
-    background-image: url(/img/aquarium_concept01.png);
+    background-image: url(img/aquarium_concept01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -119,7 +119,7 @@ article:nth-child(2) {display: flex;
 
 .olive p:nth-child(1) {font-size: 24px;}
 .olive p:nth-child(2) {
-    background-image: url(/img/olive_concept01.png);
+    background-image: url(img/olive_concept01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -129,7 +129,7 @@ article:nth-child(2) {display: flex;
 
 .grboy p:nth-child(1) {font-size: 24px;}
 .grboy p:nth-child(2) {
-    background-image: url(/img/grboy_concept01.png);
+    background-image: url(img/grboy_concept01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -212,7 +212,7 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 .popUpBox1 .img {
     width: 100%;
     height: 3827px;
-    background-image: url(/img/aqua_concept02.png);
+    background-image: url(img/aqua_concept02.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -266,7 +266,7 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 .popUpBox2 .img {
     width: 100%;
     height: 4794px;
-    background-image: url(/img/olive_concept02.png);
+    background-image: url(img/olive_concept02.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -318,7 +318,7 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 .popUpBox3 .img {
     width: 100%;
     height: 3725px;
-    background-image: url(/img/grboy_concept02.png);
+    background-image: url(img/grboy_concept02.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
