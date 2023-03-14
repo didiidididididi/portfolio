@@ -40,3 +40,115 @@ body {overflow-x: hidden;}
     50% {color: #a18cd1;}
     100% {color: #b1f4cf;}
 }
+
+
+/* 이미지 자동슬라이드 설정 */
+.img {width: 1000px; height: 300px;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    background-color: #9890e3;
+    margin-left: -500px;
+    margin-bottom: -200px;
+    display: flex;
+    overflow: hidden;}
+.img_slider {
+    width: 1000px; height: 100%;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: 0;
+    animation: ani1 27s linear infinite;
+}
+.img_copy {
+    left: 100%;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    animation: ani2 27s linear infinite;
+}
+
+
+.img_slider li {}
+.img_slider li:nth-child(1) {
+    background-image: url(../img/giriboy007.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_slider li:nth-child(2) {
+    background-image: url(../img/giriboy008.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_slider li:nth-child(3) {
+    background-image: url(../img/giriboy009.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_slider li:nth-child(4) {
+    background-image: url(../img/giriboy011.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_slider li:nth-child(5) {
+    background-image: url(../img/giriboy016.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+
+/* 이미지 카피본 */
+
+.img_copy li:nth-child(1) {
+    background-image: url(../img/giriboy013.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_copy li:nth-child(2) {
+    background-image: url(../img/giriboy015.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_copy li:nth-child(3) {
+    background-image: url(../img/giriboy017.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_copy li:nth-child(4) {
+    background-image: url(../img/giriboy022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+.img_copy li:nth-child(5) {
+    background-image: url(../img/giriboy020.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%; height: 100%;
+}
+
+@keyframes ani1 {
+
+    0% {left: 0;}
+    50% {left:-100%;}
+    50.0001% {left: 100%;}
+    100%{left: 0;}
+    
+} 
+@keyframes ani2 {
+
+    0% {left: 100%;}
+    50% {left:0%;}
+    100%{left: -100%;}
+    
+}
+
+.img:hover ul {animation-play-state: paused;}
