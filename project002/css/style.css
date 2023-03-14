@@ -531,13 +531,15 @@ section:nth-child(7) {width: 100%; height: 500px;
     width: 10%; height: 50px;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    
     cursor: pointer;}
 .membership_box12 li {color: #fff;
     padding: 10px;
     font-weight: bold;}
-.membership_box12:hover li {color: #000;}
+.membership_box12:hover a {color: #000;}
 .membership_box12 li:nth-child(2) {font-size: 20px;}
+.membership_box12 a {color: #fff;
+    transition: all 0.5s;}
 
 /* 맴버십박스2 설정 */
 .membership_box2 {width: 100%; height: 100%;
