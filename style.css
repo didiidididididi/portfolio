@@ -342,7 +342,7 @@ article:nth-child(2) span:hover {background-color: rgba(0, 0, 0, 0.7);
 .graph_box h2 {
     position: absolute;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -100px;
     top: 100px;
     width: 100%;
 }
@@ -637,7 +637,7 @@ article:nth-child(4) {display: flex;
 .lua {
     position: absolute;
     right: 200px;
-    top: 150px;
+    top: 100px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
